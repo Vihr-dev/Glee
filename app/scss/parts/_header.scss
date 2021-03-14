@@ -1,0 +1,107 @@
+.header {
+  &__logo {
+    font-size: 36px;
+    line-height: 1.6;
+    @extend %rubik-500;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__item:not(:first-child) {
+    margin-left: 35px;
+  }
+}
+
+.user-nav {
+  display: flex;
+
+  &__search,
+  &__menu {
+    background-color: #edf1f4;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    display: inline-block;
+    position: relative;
+  }
+
+  &__search-icon,
+  &__menu-icon {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+  }
+
+  &__like {
+    position: relative;
+    width: 90px;
+    height: 50px;
+    border-radius: 35% 0 0 35%;
+    background-color: #fcd7b6;
+    display: inline-block;
+  }
+
+  &__like::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 32px;
+    right: 0;
+    top: 8px;
+    z-index: 1;
+    background-color: #fff;
+  }
+
+  &__like-icon,
+  &__basket-icon {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+  }
+
+  &__like-num,
+  &__basket-num {
+    position: absolute;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-size: 10px;
+    top: 15%;
+    right: 22%;
+    background-color: #fff;
+  }
+
+  &__basket {
+    position: relative;
+    width: 90px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 0 35% 35% 0;
+    background-color: #fcd7b6;
+    display: inline-block;
+  }
+
+  &__basket-icon {
+    top: 30%;
+    left: 40%;
+  }
+
+  &__basket-num {
+    right: 25%;
+  }
+
+  &__menu {
+    background-color: $accent;
+  }
+}
