@@ -1,12 +1,17 @@
-body{
+body {
   font-size: 16px;
   line-height: 1.7;
   color: $default;
   @extend %dmsans-700;
 }
 
-.container{
+.container {
   max-width: 1800px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+a:focus,
+button:focus {
+  outline: $accent solid 1px;
 }

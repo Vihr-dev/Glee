@@ -1,9 +1,4 @@
 .header {
-  &__logo {
-    font-size: 36px;
-    line-height: 1.6;
-    @extend %rubik-500;
-  }
 
   &__inner {
     display: flex;
@@ -18,6 +13,22 @@
 
   &__item:not(:first-child) {
     margin-left: 35px;
+  }
+
+  &__link {
+    outline: transparent;
+    opacity: 1;
+    @extend %rubik-500;
+  }
+
+  &__link:hover {
+    opacity: 0.6;
+    transition: opacity 0.5s;
+  }
+
+  &__link:active {
+    opacity: 1;
+    transition: opacity 0.2s;
   }
 }
 
@@ -102,6 +113,23 @@
   }
 
   &__menu {
+    margin-right: 0;
     background-color: $accent;
+  }
+
+  &__search:hover &__search-icon,
+  &__like:hover &__like-icon,
+  &__basket:hover &__basket-icon,
+  &__menu:hover &__menu-icon {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+  }
+
+  &__search:active,
+  &__like:active,
+  &__basket:active,
+  &__menu:active {
+    background-color: #fff;
+    transition: background-color 0.7s;
   }
 }
