@@ -5,13 +5,27 @@ body {
   @extend %dmsans-700;
 }
 
+a:focus,
+button:focus {
+  outline: $accent solid 1px;
+  border-bottom: 2px solid $accentDark;
+}
+
 .container {
   max-width: 1800px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-a:focus,
-button:focus {
-  outline: $accent solid 1px;
+.logo {
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.logo:active {
+  opacity: 0.5;
 }
