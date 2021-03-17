@@ -1,5 +1,11 @@
 .top-product {
 
+  &__inner {
+    padding: 0 15px;
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
   &__item {
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,6 +33,9 @@
 
   &__btn {
     @extend %button;
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 1;
     padding: 25px 100px 25px 25px;
     position: relative;
     transition: background-color 0.4s, border 0.3s;

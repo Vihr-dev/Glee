@@ -7,12 +7,12 @@ body {
 
 a:focus,
 button:focus {
-  outline: $accent solid 1px;
+  outline: $accent solid 2px;
   border-bottom: 2px solid $accentDark;
 }
 
 .container {
-  max-width: 1800px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }

@@ -37,10 +37,8 @@ $title: #191919;
 
 %button {
   display: inline-block;
-  font-size: 15px;
-  line-height: 1;
   background-color: $accent;
   color: #fff;
-  @extend %rubik-500;
   border: 2px solid transparent;
+  cursor: pointer;
 }
