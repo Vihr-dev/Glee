@@ -29,3 +29,7 @@ button:focus {
 .logo:active {
   opacity: 0.5;
 }
+
+button:hover {
+  background-color: $accentDark;
+}

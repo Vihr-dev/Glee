@@ -37,6 +37,15 @@
     display: block;
     max-width: 225px;
     font-style: normal;
+    transition: color 0.3s;
+  }
+
+  &__connect:hover {
+    color: $accentDark;
+  }
+
+  &__connect:active {
+    color: #fff;
   }
 
   &__connect,
@@ -46,6 +55,14 @@
     color: #7b7b7b;
     @extend %rubik-400;
     margin-bottom: 10px;
+  }
+
+  &__item:hover {
+    color: $accentDark;
+  }
+
+  &__item:active {
+    color: #fff;
   }
 
   &__text {
@@ -100,6 +117,15 @@
   &__item {
     padding-left: 30px;
     position: relative;
+    transition: color 0.3s;
+  }
+
+  &__item:hover {
+    color: $accentDark;
+  }
+
+  &__item:active {
+    color: #fff;
   }
 
   &__item:not(:first-child)::before {
