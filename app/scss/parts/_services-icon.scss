@@ -1,0 +1,60 @@
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 35px 15px;
+  max-width: 1800px;
+  margin: 0 auto;
+
+  &__support,
+  &__delivery,
+  &__payment {
+    padding-left: 225px;
+    flex-grow: 1;
+  }
+
+  &__support,
+  &__delivery {
+    border-right: 1px solid #e8e4df;
+  }
+
+  &__delivery {
+    padding-top: 10px;
+  }
+
+  &__support--icon {
+    background-image: url('../images/icons/time.svg');
+    background-repeat: no-repeat;
+    background-position: 28% 20%;
+  }
+
+  &__delivery--icon {
+    background-image: url('../images/icons/delivery-truck.svg');
+    background-repeat: no-repeat;
+    background-position: 28% 35%;
+  }
+
+  &__payment--icon {
+    background-image: url('../images/icons/credit-card.svg');
+    background-repeat: no-repeat;
+    background-position: 28% 20%;
+  }
+
+  &__title {
+
+    font-size: 18px;
+    color: #414141;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    @extend %dmsans-400;
+    color: #585858;
+    max-width: 213px;
+
+    span {
+      display: block;
+    }
+  }
+
+}
