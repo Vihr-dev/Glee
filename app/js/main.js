@@ -8,4 +8,6 @@ $(function () {
     fade:true
   });
 
+  var mixer = mixitup('.product-week__content');
+
 });

@@ -1,0 +1,134 @@
+.product-week {
+
+  &__inner {
+    padding: 75px 0;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;
+  }
+
+  &__btn {
+    margin: 0 7px;
+
+    button {
+      @extend %btn-filter;
+      transition: color 0.3s;
+    }
+  }
+
+  &__btn button:hover {
+    color: $title;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__btn button:focus {
+    color: $title;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 45px;
+    grid-column-gap: 30px;
+  }
+
+
+
+  &__item {
+    min-height: 375px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    border-radius: 10px;
+    position: relative;
+  }
+
+  &__item:hover &__list {
+    display: flex;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    margin: auto;
+  }
+
+  &__sub-title {
+    text-align: center;
+    @extend %dmsans-500;
+    color: $accentDark;
+
+    span {
+      display: block;
+      text-align: center;
+      margin-bottom: 32px;
+      color: $accent;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    top: 150px;
+    margin: 0 auto;
+    display: flex;
+    display: none;
+  }
+
+  &__list li:not(:first-child) {
+    margin-left: 20px;
+  }
+
+  &__search,
+  &__basket,
+  &__like {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #fff;
+    transition: background-color 0.3s;
+
+    svg {
+      position: absolute;
+      top: 32%;
+      left: 32%;
+      transition: fill 0.3s;
+    }
+  }
+
+  &__basket {
+    background-color: $accent;
+  }
+
+  &__search:hover,
+  &__basket:hover,
+  &__like:hover {
+    background-color: $accentDark;
+    cursor: pointer;
+  }
+
+  &__search:active,
+  &__basket:active,
+  &__like:active {
+    background-color: $accent;
+  }
+
+  &__search:hover svg,
+  &__basket:hover svg,
+  &__like:hover svg {
+    fill: #fff;
+  }
+
+
+}

@@ -32,6 +32,7 @@ function styles() {
 function scripts() {
   return src([
     'app/js/slick.min.js',
+    'app/js/mixitup.js',
     'app/js/main.js'
   ])
   .pipe(concat('main.min.js'))
