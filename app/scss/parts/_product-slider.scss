@@ -34,6 +34,7 @@
   &__btn {
     @extend %button;
     @extend %rubik-500;
+    max-width: 450px;
     font-size: 15px;
     line-height: 1;
     padding: 25px 100px 25px 25px;

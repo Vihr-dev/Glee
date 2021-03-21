@@ -26,11 +26,17 @@
   }
 
   &__services {
+    max-width: 120px;
     margin-right: 180px;
   }
 
+&__account{
+  max-width: 90px;
+}
+
   &__newsletter {
     margin-left: auto;
+    padding: 0 10px;
   }
 
   &__connect {
@@ -77,6 +83,7 @@
 
   &__btn {
     @extend %button;
+    max-width: 94px;
   }
 
   &__input {
