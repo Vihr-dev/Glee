@@ -1,0 +1,48 @@
+.btn-arrow {
+  display: inline-block;
+  background-color: $accent;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  @extend %rubik-500;
+  max-width: 450px;
+  font-size: 15px;
+  line-height: 1;
+  padding: 20px 100px 20px 25px;
+  position: relative;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 10%;
+    top: 45%;
+    width: 22px;
+    height: 9px;
+    background-image: url('../images/sprite.svg#arrow');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &:hover {
+    background-color: $accentDark;
+  }
+
+  &:active {
+    outline: transparent;
+    border: 2px solid $accent;
+  }
+
+  &--transperent {
+    color: $default;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid $default;
+    margin-top: auto;
+
+    &:hover{
+      color: #fff;
+    }
+  }
+}

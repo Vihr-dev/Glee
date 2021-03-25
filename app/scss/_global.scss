@@ -25,6 +25,10 @@ button:focus {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+
+  &--big {
+    max-width: 1800px;
+  }
 }
 
 .title {
@@ -37,19 +41,15 @@ button:focus {
 
 .logo {
   padding-bottom: 2px;
-  transition: all 0.3s;
-}
+  transition: transform 0.3s, opacity 0.3s;
 
-.logo:hover {
-  transform: scale(1.1);
-}
+  &:hover {
+    transform: scale(1.1);
+  }
 
-.logo:active {
-  opacity: 0.5;
-}
-
-button:hover {
-  background-color: $accentDark;
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .sr-only {

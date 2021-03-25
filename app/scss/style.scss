@@ -2,13 +2,19 @@
 @import 'fonts';
 @import 'reset';
 @import 'global';
-@import 'slick';
+@import 'libs';
+
+
+@import './components/product-card';
+@import './components/nav';
+@import './components/btn-arrow';
+@import './components/filter';
+@import './components/icon-btn';
+
+// style
 @import './parts/header';
 @import './parts/product-slider';
-@import './parts/footer';
 @import './parts/services-icon';
 @import './parts/product-week';
-
-
-
-@import 'media'
+@import './parts/pop-product';
+@import './parts/footer';

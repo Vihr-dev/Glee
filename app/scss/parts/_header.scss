@@ -4,23 +4,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 15px;
-    max-width: 1800px;
+    padding: 50px 0;
     margin: 0 auto;
   }
 
-  &__menu {
-    display: flex;
-  }
-
-  &__item:not(:first-child) {
-    margin-left: 35px;
-  }
-
   &__link {
-    outline: transparent;
     opacity: 1;
-    @extend %rubik-500;
   }
 
   &__link:hover {
@@ -37,29 +26,12 @@
 .user-nav {
   display: flex;
 
-  &__search,
-  &__menu {
-    background-color: #edf1f4;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 20px;
-    display: inline-block;
-    position: relative;
-  }
-
-  &__search-icon,
-  &__menu-icon {
-    position: absolute;
-    left: 30%;
-    top: 30%;
-  }
-
   &__like {
     position: relative;
     width: 90px;
     height: 50px;
-    border-radius: 35% 0 0 35%;
+    border-bottom-left-radius: 25px 25px;
+    border-top-left-radius: 25px 25px;
     background-color: #fcd7b6;
     display: inline-block;
   }
@@ -78,6 +50,8 @@
   &__like-icon,
   &__basket-icon {
     position: absolute;
+    width: 17px;
+    height: 17px;
     top: 30%;
     left: 45%;
   }
@@ -100,7 +74,8 @@
     width: 90px;
     height: 50px;
     margin-right: 20px;
-    border-radius: 0 35% 35% 0;
+    border-bottom-right-radius: 25px 25px;
+    border-top-right-radius: 25px 25px;
     background-color: #fcd7b6;
     display: inline-block;
   }
@@ -114,24 +89,25 @@
     right: 25%;
   }
 
-  &__menu {
-    margin-right: 0;
-    background-color: $accent;
-  }
-
-  &__search:hover &__search-icon,
   &__like:hover &__like-icon,
-  &__basket:hover &__basket-icon,
-  &__menu:hover &__menu-icon {
+  &__basket:hover &__basket-icon {
     transform: scale(1.2);
     transition: transform 0.3s;
   }
 
-  &__search:active,
   &__like:active,
-  &__basket:active,
-  &__menu:active {
+  &__basket:active {
     background-color: #fff;
     transition: background-color 0.7s;
   }
+}
+
+.icon-btn__svg--header {
+  margin-right: 0;
+  fill: #fff;
+}
+
+.icon-btn--header{
+  background-color: $accent;
+  margin-right: 0;
 }

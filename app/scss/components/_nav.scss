@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+
+  &__item:not(:first-child) {
+    margin-left: 35px;
+  }
+
+  &__link {
+    @extend %rubik-500;
+  }
+}

@@ -30,9 +30,9 @@
     margin-right: 180px;
   }
 
-&__account{
-  max-width: 90px;
-}
+  &__account {
+    max-width: 90px;
+  }
 
   &__newsletter {
     margin-left: auto;
@@ -51,7 +51,7 @@
   }
 
   &__connect:active {
-    color: #fff;
+    color: #7b7b7b;
   }
 
   &__connect,
@@ -68,7 +68,7 @@
   }
 
   &__item:active {
-    color: #fff;
+    color: #7b7b7b;
   }
 
   &__text {
@@ -81,10 +81,7 @@
     border: 2px solid transparent;
   }
 
-  &__btn {
-    @extend %button;
-    max-width: 94px;
-  }
+  &__btn {}
 
   &__input {
     max-width: 165px;
@@ -96,11 +93,22 @@
   }
 
   &__btn {
+    @extend %button;
+    max-width: 94px;
     padding: 7px 12px 8px;
-    margin-left: -3px;
+    // margin-left: -3px;
     font-size: 14px;
     line-height: 1.5;
     @extend %dmsans-400;
+    transition: background-color 0.3s;
+
+    &:hover{
+      background-color: $accentDark;
+    }
+
+    &:active{
+      color: $title;
+    }
   }
 }
 
@@ -109,40 +117,37 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
+  color: #7b7b7b;
 
   .copy,
   &__list {
     font-size: 14px;
-    color: #7b7b7b;
     @extend %rubik-400;
-  }
-
-  &__list {
-    display: flex;
   }
 
   &__item {
-    padding-left: 30px;
+    padding-left: 27px;
     position: relative;
     transition: color 0.3s;
-  }
-
-  &__item:hover {
-    color: $accentDark;
-  }
-
-  &__item:active {
-    color: #fff;
-  }
-
-  &__item:not(:first-child)::before {
-    content: '';
     @extend %rubik-400;
-    position: absolute;
-    left: 20%;
-    top: 10%;
-    width: 1px;
-    height: 80%;
-    background-color: #7b7b7b;
+
+    &:hover {
+      color: $accentDark;
+    }
+
+    &:active {
+      color: #7b7b7b;
+    }
+
+    &:not(:first-child)::before {
+      content: '';
+      position: absolute;
+      left: 20%;
+      top: 10%;
+      width: 1px;
+      height: 80%;
+      background-color: #7b7b7b;
+    }
   }
+
 }

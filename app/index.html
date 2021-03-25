@@ -13,504 +13,564 @@
 <body>
 
   <header class="header">
-    <div class="header__inner">
-      <a class="logo" href="#">
-        <img src="images/logo.png" alt="logo">
-        <h1 class="sr-only">online store glee</h1>
-      </a>
-      <nav class="header__nav">
-        <ul class="header__menu">
-          <li class="header__item">
-            <a class="header__link" href="#">Home+</a>
+    <div class="container container--big">
+      <nav class="header__inner">
+        <a class="logo" href="#">
+          <img src="images/logo.png" width="146" height="39" alt="logo">
+          <h1 class="sr-only">online store glee</h1>
+        </a>
+        <div class="header__nav">
+          <ul class="nav">
+            <li class="nav__item">
+              <a class="nav__link header__link" href="#">Home+</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link header__link" href="#">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link header__link" href="#">Services</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link header__link" href="#">Page+</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link header__link" href="#">News</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link header__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="user-nav">
+          <li>
+            <button class="icon-btn icon-btn--search " type="button">
+              <svg class="icon-btn__svg">
+                <use xlink:href="images/sprite.svg#search-icon"></use>
+              </svg>
+              <span class="sr-only">search</span>
+            </button>
           </li>
-          <li class="header__item">
-            <a class="header__link" href="#">About</a>
+          <li>
+            <a class="user-nav__like" href="#">
+              <svg class="user-nav__like-icon">
+                <use xlink:href="images/sprite.svg#like-icon"></use>
+              </svg>
+              <span class="sr-only">like product</span>
+              <span class="user-nav__like-num">3</span>
+            </a>
           </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Services</a>
+          <li><a class="user-nav__basket" href="#">
+              <svg class="user-nav__basket-icon">
+                <use xlink:href="images/sprite.svg#basket-icon"></use>
+              </svg>
+              <span class="sr-only">basket</span>
+              <span class="user-nav__basket-num">7</span>
+            </a>
           </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Page+</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">News</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">Contact</a>
+          <li><button class="icon-btn--header icon-btn" type="button">
+              <svg class="icon-btn__svg--header icon-btn__svg">
+                <use xlink:href="images/sprite.svg#menu-icon"></use>
+              </svg>
+              <span class="sr-only">page view</span>
+            </button>
           </li>
         </ul>
       </nav>
-
-      <div class="user-nav">
-        <a class="user-nav__search" href="#">
-          <svg class="user-nav__search-icon" width="17" height="17" fill="#243f4d"><svg
-              xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="1.705 1.996 15.296 15.296">
-              <path
-                d="M4.702 8.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zm3.278-6.08c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34l1.872 2.187zM7.98 13.201c2.742 0 4.966-2.216 4.966-4.948S10.722 3.305 7.98 3.305 3.015 5.521 3.015 8.253s2.22 4.948 4.965 4.948z" />
-            </svg></svg>
-            <span class="sr-only">search</span>
-        </a>
-        <a class="user-nav__like" href="#">
-          <svg class="user-nav__like-icon" width="19" height="18" viewBox="0 0.742 19 16.515" fill="#243f4d"><svg
-              xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523">
-              <path
-                d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z" />
-            </svg></svg>
-            <span class="sr-only">like product</span>
-          <span class="user-nav__like-num">3</span>
-        </a>
-        <a class="user-nav__basket" href="#">
-          <svg class="user-nav__basket-icon" width="20" height="18" viewBox="0 0.043 20 17.915" fill="#243f4d"><svg
-              xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="2 1.998 18.956 16.98">
-              <path
-                d="M7.526 18.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.799.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L6.108 7.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H6.29A4.354 4.354 0 0 1 2.007 2.68a.591.591 0 1 1 1.171-.175 3.165 3.165 0 0 0 3.115 2.682h14.07a.592.592 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H7.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z" />
-            </svg></svg>
-            <span class="sr-only">basket</span>
-          <span class="user-nav__basket-num">7</span>
-        </a>
-        <a class="user-nav__menu" href="#">
-          <svg class="user-nav__menu-icon" width="21" height="22" viewBox="0 0.5 21 21" fill="#fff"><svg
-              xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="2 1.589 20.029 20.029">
-              <path
-                d="M4.146 5.88A2.144 2.144 0 0 1 2 3.736c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.959 2.146 2.146 0 1.186-.96 2.146-2.146 2.146zm0 7.87A2.145 2.145 0 0 1 2 11.603c0-1.186.96-2.145 2.146-2.145 1.187 0 2.146.959 2.146 2.145 0 1.187-.96 2.147-2.146 2.147zm0 7.868A2.144 2.144 0 0 1 2 19.472c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.96 2.146 2.146 0 1.187-.96 2.146-2.146 2.146zM12.014 5.88a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.959 2.146 2.146 0 1.186-.959 2.146-2.146 2.146zm0 7.869a2.145 2.145 0 0 1-2.146-2.147c0-1.186.96-2.145 2.146-2.145 1.187 0 2.146.959 2.146 2.145 0 1.187-.959 2.147-2.146 2.147zm0 7.868a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.96 2.146 2.146 0 1.187-.959 2.146-2.146 2.146zM19.883 5.88a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.959 2.146 2.146 0 1.186-.96 2.146-2.146 2.146zm0 7.869a2.145 2.145 0 0 1-2.146-2.147c0-1.186.96-2.145 2.146-2.145 1.187 0 2.146.959 2.146 2.145 0 1.187-.96 2.147-2.146 2.147zm0 7.868a2.144 2.144 0 0 1-2.146-2.146c0-1.187.96-2.146 2.146-2.146 1.187 0 2.146.96 2.146 2.146 0 1.187-.96 2.146-2.146 2.146z" />
-            </svg></svg>
-            <span class="sr-only">page view</span>
-        </a>
-      </div>
     </div>
   </header>
 
   <main>
     <section class="top-product">
-      <div class="top-product__inner">
-        <div class="top-product__slider">
+      <h2 class="sr-only">
+        Slider top product of the week
+      </h2>
+      <div class="container container--big">
+        <ul class="top-product__product-slider">
 
-          <div class="top-product__item" style="background-image: url(images/product-slider-bg.jpg);">
-            <h2 class="top-product__title">Smart and trendy</h2>
+          <li class="top-product__item" style="background-image: url(images/product-slider-bg.jpg);">
+            <div class="top-product__text">Smart and trendy</div>
             <p class="top-product__info">
               Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
             </p>
-            <a class="top-product__btn" href="#">Shop now</a>
-            <img class="top-product__img" src="images/product-slid1.png" alt="sofa">
-          </div>
+            <a class="btn-arrow" href="#">Shop now</a>
+            <img class="top-product__img" width="755" height="635" src="images/product-slid1.png" alt="sofa">
+          </li>
 
-          <div class="top-product__item" style="background-image: url(images/product-slider-bg.jpg);">
-            <h2 class="top-product__title">Smart and trendy</h2>
+          <li class="top-product__item" style="background-image: url(images/product-slider-bg.jpg);">
+            <div class="top-product__text">Smart and trendy</div>
             <p class="top-product__info">
               Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
             </p>
-            <a class="top-product__btn" href="#">Shop now</a>
-            <img class="top-product__img" src="images/product-slid1.png" alt="sofa">
-          </div>
+            <a class="btn-arrow" href="#">Shop now</a>
+            <img class="top-product__img" width="755" height="635" src="images/product-slid1.png" alt="sofa">
+          </li>
 
-          <div class="top-product__item" style="background-image: url(images/product-slider-bg.jpg);">
-            <h2 class="top-product__title">Smart and trendy</h2>
+          <li class="top-product__item" style="background-image: url(images/product-slider-bg.jpg);">
+            <div class="top-product__text">Smart and trendy</div>
             <p class="top-product__info">
               Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
             </p>
-            <a class="top-product__btn" href="#">Shop now</a>
-            <img class="top-product__img" src="images/product-slid1.png" alt="sofa">
-          </div>
+            <a class="btn-arrow" href="#">Shop now</a>
+            <img class="top-product__img" width="755" height="635" src="images/product-slid1.png" alt="sofa">
+          </li>
 
-        </div>
+        </ul>
       </div>
     </section>
 
-    <div class="services">
-      <div class="services__support services__support--icon">
-        <h4 class="services__title">
-          Support 24/7.
-        </h4>
-        <p class="services__text">
-          Contact us 24 hours a day,
-          <span>7 days a week.</span>
-        </p>
-      </div>
-      <div class="services__delivery services__delivery--icon">
-        <h4 class="services__title">
-          Delivery.
-        </h4>
-        <p class="services__text">
-          Free shipping on all US order.
-        </p>
-      </div>
-      <div class="services__payment services__payment--icon">
-        <h4 class="services__title">
-          100% Payment secure.
-        </h4>
-        <p class="services__text">
-          We ensure secure payment
-          with PEV.
-        </p>
-      </div>
+    <div class="container container--big">
+      <section class="services">
+        <h2 class="sr-only">
+          services provided
+        </h2>
+        <div class="services__item services__item--time">
+          <h3 class="services__title">
+            Support 24/7.
+          </h3>
+          <p class="services__text">
+            Contact us 24 hours a day,
+            7 days a week.
+          </p>
+        </div>
+        <div class="services__item services__item--delivery">
+          <h3 class="services__title">
+            Delivery.
+          </h3>
+          <p class="services__text">
+            Free shipping on all US order.
+          </p>
+        </div>
+        <div class="services__item services__item--payment">
+          <h3 class="services__title">
+            100% Payment secure.
+          </h3>
+          <p class="services__text">
+            We ensure secure payment
+            with PEV.
+          </p>
+        </div>
+      </section>
     </div>
 
     <section class="product-week">
       <div class="container">
         <div class="product-week__inner">
-          <h3 class="title product-week__title">
+          <h2 class="title product-week__title">
             Products of the week
-          </h3>
-          <ul class="product-week__menu">
-            <li class="product-week__btn">
-              <button type="button" data-filter="all">
+          </h2>
+          <ul class="filter">
+            <li class="filter__category">
+              <button class="filter__btn" type="button" data-filter="all">
                 All
               </button>
             </li>
-            <li class="product-week__btn">
-              <button type="button" data-filter=".furnitur">
+            <li class="filter__category">
+              <button class="filter__btn" type="button" data-filter=".furnitur">
                 Furnitures
               </button>
             </li>
-            <li class="product-week__btn" data-filter=".chair">
-              <button type="button">
+            <li class="filter__category" data-filter=".chair">
+              <button class="filter__btn" type="button">
                 Chairs
               </button>
             </li>
-            <li class="product-week__btn" data-filter=".light">
-              <button type="button">
+            <li class="filter__category" data-filter=".light">
+              <button class="filter__btn" type="button">
                 Lighting
               </button>
             </li>
-            <li class="product-week__btn" data-filter=".decor">
-              <button type="button">
+            <li class="filter__category" data-filter=".decor">
+              <button class="filter__btn" type="button">
                 Decor
               </button>
             </li>
           </ul>
           <ul class="product-week__content">
             <li class="product-week__item mix furnitur">
-              <ul class="product-week__list">
-                <li class="product-week__search">
-                  <a href="#">
-                    <svg width="17" height="17" fill="#243f4d"><svg xmlns="http://www.w3.org/2000/svg" width="17"
-                        height="17" viewBox="1.705 1.996 15.296 15.296">
-                        <path
-                          d="M4.702 8.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zm3.278-6.08c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34l1.872 2.187zM7.98 13.201c2.742 0 4.966-2.216 4.966-4.948S10.722 3.305 7.98 3.305 3.015 5.521 3.015 8.253s2.22 4.948 4.965 4.948z" />
-                      </svg></svg>
-                  </a>
-                  <span class="sr-only">search</span>
-                </li>
-                <li class="product-week__basket">
-                  <a href="#">
-                    <svg width="20" height="18" viewBox="0 0.043 20 17.915" fill="#243f4d"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="2 1.998 18.956 16.98">
-                        <path
-                          d="M7.526 18.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.799.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L6.108 7.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H6.29A4.354 4.354 0 0 1 2.007 2.68a.591.591 0 1 1 1.171-.175 3.165 3.165 0 0 0 3.115 2.682h14.07a.592.592 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H7.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z" />
-                      </svg></svg>
-                  </a>
-                  <span class="sr-only">basket</span>
-                </li>
-                <li class="product-week__like">
-                  <a href="#">
-                    <svg width="19" height="18" viewBox="0 0.742 19 16.515" fill="#243f4d"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523">
-                        <path
-                          d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z" />
-                      </svg></svg>
-                  </a>
-                  <span class="sr-only">like</span>
-                </li>
-              </ul>
-              <a class="product-week__link" href="#">
-                <img src="images/week/photo-1.png" alt="product">
-                <h4 class="product-week__sub-title">
-                  Wooden radio
+              <article class="product-card">
+                <ul class="product-card__list">
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#search-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">search</span>
+                  </li>
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#basket-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">basket</span>
+                  </li>
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#like-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">like</span>
+                  </li>
+                </ul>
+                <a class="product-card__link" href="#">
+                  <div class="test">
+                    <img src="images/week/photo-1.png" width="200" height="200" alt="product">
+                  </div>
+                  <h3 class="product-card__sub-title">
+                    Wooden radio
+                  </h3>
                   <span>$29.00</span>
-                </h4>
-              </a>
+                </a>
+              </article>
             </li>
             <li class="product-week__item mix furnitur">
-              <ul class="product-week__list">
-                <li class="product-week__search">
-                  <a href="#">
-                    <svg width="17" height="17" fill="#243f4d"><svg xmlns="http://www.w3.org/2000/svg" width="17"
-                        height="17" viewBox="1.705 1.996 15.296 15.296">
-                        <path
-                          d="M4.702 8.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zm3.278-6.08c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34l1.872 2.187zM7.98 13.201c2.742 0 4.966-2.216 4.966-4.948S10.722 3.305 7.98 3.305 3.015 5.521 3.015 8.253s2.22 4.948 4.965 4.948z" />
-                      </svg></svg>
-                      <span class="sr-only">search</span>
-                  </a>
-                </li>
-                <li class="product-week__basket">
-                  <a href="#">
-                    <svg width="20" height="18" viewBox="0 0.043 20 17.915" fill="#243f4d"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="2 1.998 18.956 16.98">
-                        <path
-                          d="M7.526 18.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.799.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L6.108 7.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H6.29A4.354 4.354 0 0 1 2.007 2.68a.591.591 0 1 1 1.171-.175 3.165 3.165 0 0 0 3.115 2.682h14.07a.592.592 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H7.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z" />
-                      </svg></svg>
-                      <span class="sr-only">basket</span>
-                  </a>
-                </li>
-                <li class="product-week__like">
-                  <a href="#">
-                    <svg width="19" height="18" viewBox="0 0.742 19 16.515" fill="#243f4d"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523">
-                        <path
-                          d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z" />
-                      </svg></svg>
-                      <span class="sr-only">like</span>
-                  </a>
-                </li>
-              </ul>
-              <a class="product-week__link" href="#">
-                <img src="images/week/photo-2.png" alt="product">
-                <h4 class="product-week__sub-title">
-                  Wooden chair
+              <article class="product-card">
+                <ul class="product-card__list">
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#search-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">search</span>
+                  </li>
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#basket-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">basket</span>
+                  </li>
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#like-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">like</span>
+                  </li>
+                </ul>
+                <a class="product-card__link" href="#">
+                  <img src="images/week/photo-2.png" alt="product">
+                  <h3 class="product-card__sub-title">
+                    Wooden radio
+                  </h3>
                   <span>$29.00</span>
-                </h4>
-              </a>
+                </a>
+              </article>
             </li>
-            <li class="product-week__item mix chair">
-              <ul class="product-week__list">
-                <li class="product-week__search">
-                  <a href="#">
-                    <svg width="17" height="17" fill="#243f4d"><svg xmlns="http://www.w3.org/2000/svg" width="17"
-                        height="17" viewBox="1.705 1.996 15.296 15.296">
-                        <path
-                          d="M4.702 8.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zm3.278-6.08c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34l1.872 2.187zM7.98 13.201c2.742 0 4.966-2.216 4.966-4.948S10.722 3.305 7.98 3.305 3.015 5.521 3.015 8.253s2.22 4.948 4.965 4.948z" />
-                      </svg></svg>
-                      <span class="sr-only">search</span>
-                  </a>
-                </li>
-                <li class="product-week__basket">
-                  <a href="#">
-                    <svg width="20" height="18" viewBox="0 0.043 20 17.915" fill="#243f4d"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="2 1.998 18.956 16.98">
-                        <path
-                          d="M7.526 18.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.799.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L6.108 7.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H6.29A4.354 4.354 0 0 1 2.007 2.68a.591.591 0 1 1 1.171-.175 3.165 3.165 0 0 0 3.115 2.682h14.07a.592.592 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H7.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z" />
-                      </svg></svg>
-                      <span class="sr-only">basket</span>
-                  </a>
-                </li>
-                <li class="product-week__like">
-                  <a href="#">
-                    <svg width="19" height="18" viewBox="0 0.742 19 16.515" fill="#243f4d"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523">
-                        <path
-                          d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z" />
-                      </svg></svg>
-                      <span class="sr-only">like</span>
-                  </a>
-                </li>
-              </ul>
-              <a class="product-week__link" href="#">
-                <img src="images/week/photo-3.png" alt="product">
-                <h4 class="product-week__sub-title">
-                  White chair
+            <li class="product-week__item mix furnitur">
+              <article class="product-card">
+                <ul class="product-card__list">
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#search-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">search</span>
+                  </li>
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#basket-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">basket</span>
+                  </li>
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#like-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">like</span>
+                  </li>
+                </ul>
+                <a class="product-card__link" href="#">
+                  <img src="images/week/photo-3.png" alt="product">
+                  <h3 class="product-card__sub-title">
+                    Wooden radio
+                  </h3>
                   <span>$29.00</span>
-                </h4>
-              </a>
+                </a>
+              </article>
             </li>
-            <li class="product-week__item mix chair">
-              <ul class="product-week__list">
-                <li class="product-week__search">
-                  <a href="#">
-                    <svg width="17" height="17" fill="#243f4d"><svg xmlns="http://www.w3.org/2000/svg" width="17"
-                        height="17" viewBox="1.705 1.996 15.296 15.296">
-                        <path
-                          d="M4.702 8.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zm3.278-6.08c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34l1.872 2.187zM7.98 13.201c2.742 0 4.966-2.216 4.966-4.948S10.722 3.305 7.98 3.305 3.015 5.521 3.015 8.253s2.22 4.948 4.965 4.948z" />
-                      </svg></svg>
-                      <span class="sr-only">search</span>
-                  </a>
-                </li>
-                <li class="product-week__basket">
-                  <a href="#">
-                    <svg width="20" height="18" viewBox="0 0.043 20 17.915" fill="#243f4d"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="2 1.998 18.956 16.98">
-                        <path
-                          d="M7.526 18.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.799.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L6.108 7.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H6.29A4.354 4.354 0 0 1 2.007 2.68a.591.591 0 1 1 1.171-.175 3.165 3.165 0 0 0 3.115 2.682h14.07a.592.592 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H7.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z" />
-                      </svg></svg>
-                      <span class="sr-only">basket</span>
-                  </a>
-                </li>
-                <li class="product-week__like">
-                  <a href="#">
-                    <svg width="19" height="18" viewBox="0 0.742 19 16.515" fill="#243f4d"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523">
-                        <path
-                          d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z" />
-                      </svg></svg>
-                      <span class="sr-only">like</span>
-                  </a>
-                </li>
-              </ul>
-              <a class="product-week__link" href="#">
-                <img src="images/week/photo-4.png" alt="product">
-                <h4 class="product-week__sub-title">
-                  Wooden radio
+            <li class="product-week__item mix furnitur">
+              <article class="product-card">
+                <ul class="product-card__list">
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#search-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">search</span>
+                  </li>
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#basket-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">basket</span>
+                  </li>
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#like-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">like</span>
+                  </li>
+                </ul>
+                <a class="product-card__link" href="#">
+                  <img src="images/week/photo-4.png" alt="product">
+                  <h3 class="product-card__sub-title">
+                    Wooden radio
+                  </h3>
                   <span>$29.00</span>
-                </h4>
-              </a>
+                </a>
+              </article>
             </li>
-            <li class="product-week__item mix light">
-              <ul class="product-week__list">
-                <li class="product-week__search">
-                  <a href="#">
-                    <svg width="17" height="17" fill="#243f4d"><svg xmlns="http://www.w3.org/2000/svg" width="17"
-                        height="17" viewBox="1.705 1.996 15.296 15.296">
-                        <path
-                          d="M4.702 8.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zm3.278-6.08c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34l1.872 2.187zM7.98 13.201c2.742 0 4.966-2.216 4.966-4.948S10.722 3.305 7.98 3.305 3.015 5.521 3.015 8.253s2.22 4.948 4.965 4.948z" />
-                      </svg></svg>
-                      <span class="sr-only">search</span>
-                  </a>
-                </li>
-                <li class="product-week__basket">
-                  <a href="#">
-                    <svg width="20" height="18" viewBox="0 0.043 20 17.915" fill="#243f4d"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="2 1.998 18.956 16.98">
-                        <path
-                          d="M7.526 18.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.799.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L6.108 7.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H6.29A4.354 4.354 0 0 1 2.007 2.68a.591.591 0 1 1 1.171-.175 3.165 3.165 0 0 0 3.115 2.682h14.07a.592.592 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H7.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z" />
-                      </svg></svg>
-                      <span class="sr-only">basket</span>
-                  </a>
-                </li>
-                <li class="product-week__like">
-                  <a href="#">
-                    <svg width="19" height="18" viewBox="0 0.742 19 16.515" fill="#243f4d"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523">
-                        <path
-                          d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z" />
-                      </svg></svg>
-                      <span class="sr-only">like</span>
-                  </a>
-                </li>
-              </ul>
-              <a class="product-week__link" href="#">
-                <img src="images/week/photo-5.png" alt="product">
-                <h4 class="product-week__sub-title">
-                  Retro table
+            <li class="product-week__item mix furnitur">
+              <article class="product-card">
+                <ul class="product-card__list">
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#search-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">search</span>
+                  </li>
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#basket-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">basket</span>
+                  </li>
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#like-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">like</span>
+                  </li>
+                </ul>
+                <a class="product-card__link" href="#">
+                  <img src="images/week/photo-5.png" alt="product">
+                  <h3 class="product-card__sub-title">
+                    Wooden radio
+                  </h3>
                   <span>$29.00</span>
-                </h4>
-              </a>
+                </a>
+              </article>
             </li>
-            <li class="product-week__item mix light">
-              <ul class="product-week__list">
-                <li class="product-week__search">
-                  <a href="#">
-                    <svg width="17" height="17" fill="#243f4d"><svg xmlns="http://www.w3.org/2000/svg" width="17"
-                        height="17" viewBox="1.705 1.996 15.296 15.296">
-                        <path
-                          d="M4.702 8.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zm3.278-6.08c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34l1.872 2.187zM7.98 13.201c2.742 0 4.966-2.216 4.966-4.948S10.722 3.305 7.98 3.305 3.015 5.521 3.015 8.253s2.22 4.948 4.965 4.948z" />
-                      </svg></svg>
-                      <span class="sr-only">search</span>
-                  </a>
-                </li>
-                <li class="product-week__basket">
-                  <a href="#">
-                    <svg width="20" height="18" viewBox="0 0.043 20 17.915" fill="#243f4d"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="2 1.998 18.956 16.98">
-                        <path
-                          d="M7.526 18.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.799.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L6.108 7.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H6.29A4.354 4.354 0 0 1 2.007 2.68a.591.591 0 1 1 1.171-.175 3.165 3.165 0 0 0 3.115 2.682h14.07a.592.592 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H7.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z" />
-                      </svg></svg>
-                      <span class="sr-only">basket</span>
-                  </a>
-                </li>
-                <li class="product-week__like">
-                  <a href="#">
-                    <svg width="19" height="18" viewBox="0 0.742 19 16.515" fill="#243f4d"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523">
-                        <path
-                          d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z" />
-                      </svg></svg>
-                      <span class="sr-only">like</span>
-                  </a>
-                </li>
-              </ul>
-              <a class="product-week__link" href="#">
-                <img src="images/week/photo-6.png" alt="product">
-                <h4 class="product-week__sub-title">
-                  White chair
+            <li class="product-week__item mix furnitur">
+              <article class="product-card">
+                <ul class="product-card__list">
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#search-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">search</span>
+                  </li>
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#basket-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">basket</span>
+                  </li>
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#like-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">like</span>
+                  </li>
+                </ul>
+                <a class="product-card__link" href="#">
+                  <img src="images/week/photo-6.png" alt="product">
+                  <h3 class="product-card__sub-title">
+                    Wooden radio
+                  </h3>
                   <span>$29.00</span>
-                </h4>
-              </a>
+                </a>
+              </article>
             </li>
-            <li class="product-week__item mix decor">
-              <ul class="product-week__list">
-                <li class="product-week__search">
-                  <a href="#">
-                    <svg width="17" height="17" fill="#243f4d"><svg xmlns="http://www.w3.org/2000/svg" width="17"
-                        height="17" viewBox="1.705 1.996 15.296 15.296">
-                        <path
-                          d="M4.702 8.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zm3.278-6.08c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34l1.872 2.187zM7.98 13.201c2.742 0 4.966-2.216 4.966-4.948S10.722 3.305 7.98 3.305 3.015 5.521 3.015 8.253s2.22 4.948 4.965 4.948z" />
-                      </svg></svg>
-                      <span class="sr-only">search</span>
-                  </a>
-                </li>
-                <li class="product-week__basket">
-                  <a href="#">
-                    <svg width="20" height="18" viewBox="0 0.043 20 17.915" fill="#243f4d"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="2 1.998 18.956 16.98">
-                        <path
-                          d="M7.526 18.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.799.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L6.108 7.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H6.29A4.354 4.354 0 0 1 2.007 2.68a.591.591 0 1 1 1.171-.175 3.165 3.165 0 0 0 3.115 2.682h14.07a.592.592 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H7.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z" />
-                      </svg></svg>
-                      <span class="sr-only">basket</span>
-                  </a>
-                </li>
-                <li class="product-week__like">
-                  <a href="#">
-                    <svg width="19" height="18" viewBox="0 0.742 19 16.515" fill="#243f4d"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523">
-                        <path
-                          d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z" />
-                      </svg></svg>
-                      <span class="sr-only">like</span>
-                  </a>
-                </li>
-              </ul>
-              <a class="product-week__link" href="#">
-                <img src="images/week/photo-7.png" alt="product">
-                <h4 class="product-week__sub-title">
-                  Wooden chair
+            <li class="product-week__item mix furnitur">
+              <article class="product-card">
+                <ul class="product-card__list">
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#search-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">search</span>
+                  </li>
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#basket-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">basket</span>
+                  </li>
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#like-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">like</span>
+                  </li>
+                </ul>
+                <a class="product-card__link" href="#">
+                  <img src="images/week/photo-7.png" alt="product">
+                  <h3 class="product-card__sub-title">
+                    Wooden radio
+                  </h3>
                   <span>$29.00</span>
-                </h4>
-              </a>
+                </a>
+              </article>
             </li>
-            <li class="product-week__item mix decor">
-              <ul class="product-week__list">
-                <li class="product-week__search">
-                  <a href="#">
-                    <svg width="17" height="17" fill="#243f4d"><svg xmlns="http://www.w3.org/2000/svg" width="17"
-                        height="17" viewBox="1.705 1.996 15.296 15.296">
-                        <path
-                          d="M4.702 8.076c.356-.065.68.13.746.484.096.582.355 1.067.78 1.49.42.388.941.677 1.493.776.325.066.552.39.487.743a.643.643 0 0 1-.714.516 4.2 4.2 0 0 1-2.143-1.13 4.164 4.164 0 0 1-1.136-2.137c-.065-.354.128-.676.487-.742zm3.278-6.08c3.465 0 6.279 2.8 6.279 6.257 0 .93-.203 1.812-.568 2.604l2.336 2.036c1.703 1.747.746 3.266.294 3.717-.422.454-1.994 1.415-3.73-.292l-2.06-2.35c-.78.345-1.64.539-2.548.539-3.468 0-6.278-2.802-6.278-6.257 0-3.456 2.807-6.254 6.275-6.254zm5.546 13.517c.293.324 1.126.867 1.88.226.21-.176.634-1.068-.227-1.873l-2.162-1.88a6.269 6.269 0 0 1-1.363 1.34l1.872 2.187zM7.98 13.201c2.742 0 4.966-2.216 4.966-4.948S10.722 3.305 7.98 3.305 3.015 5.521 3.015 8.253s2.22 4.948 4.965 4.948z" />
-                      </svg></svg>
-                      <span class="sr-only">search</span>
-                  </a>
-                </li>
-                <li class="product-week__basket">
-                  <a href="#">
-                    <svg width="20" height="18" viewBox="0 0.043 20 17.915" fill="#243f4d"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="2 1.998 18.956 16.98">
-                        <path
-                          d="M7.526 18.978c-.536 0-1.063-.21-1.461-.607a2.066 2.066 0 0 1-.453-2.26 2.068 2.068 0 0 1 1.915-1.28h.006c.55 0 1.07.214 1.46.602.393.394.609.913.609 1.467.002.84-.5 1.593-1.277 1.917-.258.108-.53.16-.799.16zm.007-2.963h-.004a.887.887 0 0 0-.628 1.518.89.89 0 1 0 .632-1.518zm8.385 2.963c-.537 0-1.064-.21-1.461-.607a2.065 2.065 0 0 1-.452-2.26 2.065 2.065 0 0 1 1.913-1.28c.546-.04 1.08.218 1.468.603.392.393.607.912.607 1.466a2.064 2.064 0 0 1-1.274 1.917c-.26.108-.532.16-.8.16zm.006-2.963h-.001c-.331.032-.685.215-.823.548a.89.89 0 1 0 .824-.548zm-11.279.163a.592.592 0 0 1-.536-.843c.579-1.24 1.627-1.973 3.054-2.15L6.108 7.792a.593.593 0 0 1 1.163-.227l1.091 5.578h9.423l1.807-6.771H6.29A4.354 4.354 0 0 1 2.007 2.68a.591.591 0 1 1 1.171-.175 3.165 3.165 0 0 0 3.115 2.682h14.07a.592.592 0 0 1 .573.745l-2.123 7.956a.594.594 0 0 1-.573.44H7.885a.044.044 0 0 0-.023 0c-1.33 0-2.205.493-2.68 1.51a.593.593 0 0 1-.537.34z" />
-                      </svg></svg>
-                      <span class="sr-only">basket</span>
-                  </a>
-                </li>
-                <li class="product-week__like">
-                  <a href="#">
-                    <svg width="19" height="18" viewBox="0 0.742 19 16.515" fill="#243f4d"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="1.983 1.721 17.859 15.523">
-                        <path
-                          d="M10.913 17.244a.707.707 0 0 1-.28-.056c-.353-.15-8.65-3.75-8.65-10.76.091-2.65 2.207-4.707 4.818-4.707 1.743 0 3.266.918 4.112 2.31a4.796 4.796 0 0 1 4.112-2.31c2.61 0 4.725 2.058 4.817 4.684 0 7.034-8.297 10.634-8.65 10.783a.71.71 0 0 1-.28.056zM6.8 3.106c-1.847 0-3.343 1.47-3.408 3.346 0 5.408 6.125 8.663 7.52 9.335 1.395-.672 7.52-3.93 7.52-9.358-.065-1.853-1.563-3.323-3.408-3.323s-3.342 1.47-3.408 3.346a.7.7 0 0 1-.704.67.7.7 0 0 1-.705-.67c-.064-1.876-1.561-3.346-3.407-3.346z" />
-                      </svg></svg>
-                      <span class="sr-only">like</span>
-                  </a>
-                </li>
-              </ul>
-              <a class="product-week__link" href="#">
-                <img src="images/week/photo-8.png" alt="product">
-                <h4 class="product-week__sub-title">
-                  Retro table
+            <li class="product-week__item mix furnitur">
+              <article class="product-card">
+                <ul class="product-card__list">
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#search-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">search</span>
+                  </li>
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#basket-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">basket</span>
+                  </li>
+                  <li class="icon-btn icon-btn--week">
+                    <a href="#">
+                      <svg class="icon-btn__svg">
+                        <use xlink:href="images/sprite.svg#like-icon"></use>
+                      </svg>
+                    </a>
+                    <span class="sr-only">like</span>
+                  </li>
+                </ul>
+                <a class="product-card__link" href="#">
+                  <img src="images/week/photo-8.png" alt="product">
+                  <h3 class="product-card__sub-title">
+                    Wooden radio
+                  </h3>
                   <span>$29.00</span>
-                </h4>
+                </a>
+              </article>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="pop-product">
+      <div class="container container--big">
+        <div class="pop-product__inner">
+          <div class="pop-product__item">
+            <img class="pop-product__img" width="250" height="450" src="images/pop-product1.png" alt="popular ptoduct">
+            <h2 class="pop-product__title">
+              Mirum Notare Tellus
+            </h2>
+            <p class="pop-product__text">
+              LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
+            </p>
+            <a class="btn-arrow btn-arrow--transperent" href="#">
+              View more
+            </a>
+          </div>
+          <div class="pop-product__item">
+            <img class="pop-product__img" src="images/pop-product2.png" alt="popular ptoduct">
+            <h2 class="pop-product__title">
+              Malesuada Tempor
+              Euismod
+            </h2>
+            <p class="pop-product__text">
+              0W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
+            </p>
+            <a class="btn-arrow--transperent btn-arrow " href="#">
+              View more
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="new-design">
+      <div class="container">
+        <div class="new-design__inner">
+          <h2 class="title new-design__title">
+            New Design
+          </h2>
+          <ul class="filter">
+            <li class="filter__category">
+              <button class="filter__btn" type="button" data-filter="all">
+                All
+              </button>
+            </li>
+            <li class="filter__category">
+              <button class="filter__btn" type="button" data-filter=".furnitur">
+                Furnitures
+              </button>
+            </li>
+            <li class="filter__category" data-filter=".chair">
+              <button class="filter__btn" type="button">
+                Chairs
+              </button>
+            </li>
+            <li class="filter__category" data-filter=".light">
+              <button class="filter__btn" type="button">
+                Lighting
+              </button>
+            </li>
+            <li class="filter__category" data-filter=".decor">
+              <button class="filter__btn" type="button">
+                Decor
+              </button>
+            </li>
+          </ul>
+          <ul class="new-design__list">
+            <li class="new-design__item">
+              <a href="#">
+                <h3 class="new-design__sub-title">
+                  Beat Flat Pendant
+                  Black
+                </h3>
+                <span class="new-design__style">Classic</span>
               </a>
             </li>
           </ul>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
@@ -519,7 +579,7 @@
         <div class="footer-top">
           <address class="footer-top__address">
             <a class="logo logo__footer" href="#">
-              <img src="images/logo.png" alt="logo">
+              <img src="images/logo.png" width="146" height="39" alt="logo">
             </a>
             <a class="footer-top__connect" href="#">
               ADDRESS: 4772 Wines Lane
@@ -612,7 +672,7 @@
             ©2020 CopyRight Example. All rights reserved
           </p>
           <nav class="footer-bottom__menu">
-            <ul class="footer-bottom__list">
+            <ul class="nav">
               <li class="footer-bottom__item">
                 <a class="footer-bottom__link" href="#">
                   Home

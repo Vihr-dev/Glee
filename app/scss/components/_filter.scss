@@ -1,0 +1,32 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 75px;
+
+  &__category {
+    margin: 0 7px;
+  }
+
+  &__btn {
+    color: #8b8b8b;
+    background-color: transparent;
+    border-color: transparent;
+    line-height: 1.2;
+    text-align: center;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $title;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    &:focus {
+      color: $title;
+    }
+
+    &:active {
+      color: #fff;
+    }
+  }
+}

@@ -1,11 +1,5 @@
 .top-product {
 
-  &__inner {
-    padding: 0 15px;
-    max-width: 1800px;
-    margin: 0 auto;
-  }
-
   &__item {
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,7 +8,7 @@
     padding: 210px 0 280px 300px;
   }
 
-  &__title {
+  &__text {
     max-width: 450px;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -22,6 +16,7 @@
     line-height: 1;
     color: #243f4d;
     @extend %rubik-500;
+    @include clamp(2);
   }
 
   &__info {
@@ -29,42 +24,13 @@
     font-size: 18px;
     margin-bottom: 30px;
     @extend %rubik-400;
-  }
-
-  &__btn {
-    @extend %button;
-    @extend %rubik-500;
-    max-width: 450px;
-    font-size: 15px;
-    line-height: 1;
-    padding: 25px 100px 25px 25px;
-    position: relative;
-    transition: background-color 0.4s, border 0.3s;
-  }
-
-  &__btn:hover {
-    background-color: $accentDark;
-  }
-
-  &__btn:active {
-    outline: transparent;
-    border: 2px solid $accent;
-  }
-
-  &__btn::after {
-    content: '';
-    position: absolute;
-    right: 10%;
-    top: 44%;
-    width: 22px;
-    height: 9px;
-    background-image: url('../images/icons/arrow.svg');
+    @include clamp(5);
   }
 
   &__img {
     position: absolute;
-    top: 33%;
-    right: 17%;
+    top: 12%;
+    right: 10%;
   }
 
   .slick-dots {
