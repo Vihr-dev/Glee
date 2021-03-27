@@ -29,7 +29,7 @@ function browsersync() {
 }
 
 function html() {
-  return src('app/**/*.html')
+  return src('app/parts/index.html')
     .pipe(include({
       prefix: '@@',
       basepath: '@file'
@@ -54,8 +54,9 @@ function styles() {
 
 function scripts() {
   return src([
-      'app/js/slick.min.js',
-      'app/js/mixitup.js',
+      'node_modules/slick-carousel/slick/slick.js',
+      'node_modules/mixitup/dist/mixitup.js',
+      'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
       'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
@@ -136,11 +137,11 @@ function cleanDist() {
 function watching() {
   watch(['app/scss/**/*.scss'], styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-  watch(['app/html/*.html'], html)
+  watch(['app/parts/*.html'], html)
   watch(['app/**/*.html']).on('change', browserSync.reload);
 }
 
-// exports.html = html;
+exports.html = html;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.browsersync = browsersync;

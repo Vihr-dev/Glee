@@ -51,3 +51,10 @@ $pink: #fcd7b6;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

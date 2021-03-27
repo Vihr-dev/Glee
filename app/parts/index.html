@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,24 @@
   <link rel="icon" href="images/sofa.ico" type="images/sofa.ico">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
 
-  @@include('parts/header.html')
-  @@include('parts/top-product.html')
-  @@include('parts/services.html')
-  @@include('parts/product-week.html')
-  @@include('parts/pop-product.html')
-  @@include('parts/new-design.html')
-  @@include('parts/footer.html')
+  @@include('_header.html')
+  <main>
+    @@include('_top-product.html')
+    @@include('_services.html')
+    @@include('_product-week.html')
+    @@include('_new-design.html')
+    @@include('_video.html')
+  </main>
+  @@include('_footer.html')
 
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
+
 </html>
