@@ -1,0 +1,43 @@
+.new-design {
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 35px;
+    grid-column-gap: 30px;
+  }
+
+  &__item {
+    background-color: #f8f8f8;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__sub-title {
+    max-width: 171px;
+    font-size: 20px;
+    margin-left: 40px;
+    padding-top: 25px;
+    color: $title;
+  }
+
+  &__style {
+    display: block;
+    padding-left: 40px;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 20%;
+    right: var(--wimg);
+    left: calc(var(--wimg) + 75%);
+    object-fit: cover;
+  }
+}

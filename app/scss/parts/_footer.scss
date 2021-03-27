@@ -81,8 +81,6 @@
     border: 2px solid transparent;
   }
 
-  &__btn {}
-
   &__input {
     max-width: 165px;
     width: 100%;
@@ -96,7 +94,6 @@
     @extend %button;
     max-width: 94px;
     padding: 7px 12px 8px;
-    // margin-left: -3px;
     font-size: 14px;
     line-height: 1.5;
     @extend %dmsans-400;

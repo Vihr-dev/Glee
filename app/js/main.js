@@ -7,6 +7,16 @@ $(function () {
     arrows: false
   });
 
-  var mixer = mixitup('.product-week__content');
+  var containerMix1 = document.querySelector('[data-ref="week"]');
+  var containerMix2 = document.querySelector('[data-ref="new"]');
+  var config = {
+    controls: {
+      scope: 'local'
+    }
+  };
+  
+
+  var mixer1 = mixitup(containerMix1, config);
+  var mixer = mixitup(containerMix2, config);
 
 });

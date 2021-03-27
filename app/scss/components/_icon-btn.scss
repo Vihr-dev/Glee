@@ -47,6 +47,11 @@
 
     &:hover {
       background-color: $accent;
+      cursor: pointer;
+    }
+
+    &:active{
+      background-color: $accentDark;
     }
   }
 }

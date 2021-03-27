@@ -45,14 +45,6 @@ $pink: #fcd7b6;
   cursor: pointer;
 }
 
-%btn-filter {
-  color: #8b8b8b;
-  background-color: transparent;
-  border-color: transparent;
-  line-height: 1.2;
-  text-align: center;
-}
-
 @mixin clamp($clamp) {
   display: -webkit-box;
   -webkit-line-clamp: $clamp;
