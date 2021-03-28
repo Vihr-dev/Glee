@@ -45,6 +45,10 @@
   &--week {
     background-color: $pink;
     transition: background-color 0.3s;
+    outline: transparent solid 2px ;
+    a{
+      outline: transparent;
+    }
 
     &:hover {
       background-color: $accent;
@@ -53,6 +57,10 @@
 
     &:active{
       background-color: $accentDark;
+    }
+
+    &:focus li{
+      outline: $accentDark solid 2px;
     }
   }
 }
