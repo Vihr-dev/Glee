@@ -8,21 +8,15 @@
   max-width: 450px;
   font-size: 15px;
   line-height: 1;
-  padding: 20px 100px 20px 25px;
+  padding: 20px 20px 20px 25px;
   position: relative;
   transition: background-color 0.3s, border 0.3s, color 0.3s;
 
-  &::after {
-    content: '';
-    position: absolute;
-    right: 10%;
-    top: 45%;
+  &__svg {
     width: 22px;
     height: 9px;
-    background-image: url('../images/sprite.svg#arrow');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    margin-left: 55px;
+    fill: #fff;
   }
 
   &:hover {
@@ -41,8 +35,17 @@
     border: 2px solid $default;
     margin-top: auto;
 
-    &:hover{
+    .btn-arrow__svg {
+      fill: $default;
+      transition: fill 0.3s;
+    }
+
+    &:hover {
       color: #fff;
+
+      .btn-arrow__svg {
+        fill: #fff;
+      }
     }
   }
 }

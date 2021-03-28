@@ -1,0 +1,157 @@
+.blog {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    z-index: -5;
+    width: 100vw;
+    height: 175px;
+    background-color: #fef7f0;
+  }
+
+  &__inner {
+    padding-top: 120px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 46px;
+  }
+
+  &__all {
+    color: $title;
+    padding-right: 25px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 25%;
+      width: 7px;
+      height: 12px;
+      background-image: url('../images/sprite.svg#arrow-right');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    background-color: #fff;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
+    transition: transform 0.3s;
+    position: relative;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__text {
+    display: block;
+    @extend %dmsans-500;
+    font-size: 18px;
+    line-height: 1.4;
+    color: $title;
+    padding: 0 50px 0 30px;
+    margin-bottom: 18px;
+    margin-bottom: auto;
+    @include clamp (3);
+  }
+
+  &__info {
+    padding-top: 22px;
+    border-top: 1px solid #e0e0e0;
+    margin: 0 25px;
+    @extend %rubik-400;
+    font-size: 12px;
+    padding-bottom: 25px;
+  }
+
+  &__data {
+    margin-right: 30px;
+    padding-left: 20px;
+    position: relative;
+
+    &::before {
+      content: "\f073";
+      font-family: 'icomoon';
+      position: absolute;
+      left: 0;
+    }
+
+    &:hover {
+      color: $accentDark;
+    }
+
+    &:active {
+      color: $accent;
+    }
+  }
+
+  &__author {
+    padding-left: 20px;
+    position: relative;
+
+    &::before {
+      content: "\f2c0";
+      font-family: 'icomoon';
+      position: absolute;
+      left: 0;
+    }
+
+    &:hover {
+      color: $accentDark;
+    }
+
+    &:active {
+      color: $accent;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    color: #fff;
+    top: 227px;
+    left: 25px;
+    padding: 10px 30px;
+    background-color: $accent;
+    border-radius: 30px;
+    @extend %poppins-700;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s;
+
+    &:hover {
+      background-color: $accentDark;
+      transform: scale(1.2);
+    }
+
+    &:active {
+      background-color: $accent;
+    }
+
+  }
+}

@@ -7,6 +7,16 @@ $(function () {
     arrows: false
   });
 
+  $('.partner__list').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    // autoplay: true,
+    // autoplaySpeed: 1500
+
+  });
+
   var containerMix1 = document.querySelector('[data-ref="week"]');
   var containerMix2 = document.querySelector('[data-ref="new"]');
   var config = {

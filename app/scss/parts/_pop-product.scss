@@ -1,7 +1,5 @@
 .pop-product {
 
-  /* .pop-product__inner */
-
   &__inner {
     padding-top: 90px;
     margin-bottom: 105px;
@@ -27,8 +25,6 @@
     bottom: 70px;
   }
 
-  /* .pop-product__title */
-
   &__title {
     color: $accentDark;
     font-size: 26px;
@@ -38,8 +34,6 @@
     padding-top: 30px;
     @include clamp(2);
   }
-
-  /* .pop-product__text */
 
   &__text {
     @extend %rubik-400;
