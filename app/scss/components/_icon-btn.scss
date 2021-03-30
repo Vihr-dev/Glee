@@ -1,5 +1,5 @@
 .icon-btn {
-  background-color: #edf1f4;
+  background-color: $icons;
   border-color: transparent;
   width: 50px;
   height: 50px;
@@ -9,15 +9,18 @@
   position: relative;
   cursor: pointer;
 
-  &:hover &__svg {
-    transform: scale(1.2);
-    transition: transform 0.3s;
+  &:hover {
+    background-color: $accentDark;
     cursor: pointer;
+
+    .icon-btn__svg{
+      fill: #fff;
+    }
   }
 
   &:active {
-    background-color: #fff;
-    transition: background-color 0.7s;
+    background-color: $accent;
+    transition: background-color 0.3s;
   }
 
   &__svg {
@@ -40,27 +43,5 @@
   &--header {
     background-color: $accent;
     margin-right: 0;
-  }
-
-  &--week {
-    background-color: $pink;
-    transition: background-color 0.3s;
-    outline: transparent solid 2px ;
-    a{
-      outline: transparent;
-    }
-
-    &:hover {
-      background-color: $accent;
-      cursor: pointer;
-    }
-
-    &:active{
-      background-color: $accentDark;
-    }
-
-    &:focus li{
-      outline: $accentDark solid 2px;
-    }
   }
 }

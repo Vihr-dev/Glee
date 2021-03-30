@@ -4,8 +4,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
-    margin: 0 auto;
+    padding: 45px 0;
+  }
+
+  &__nav{
+    margin-left: 9%;
   }
 
   &__link {
@@ -32,8 +35,21 @@
     height: 50px;
     border-bottom-left-radius: 25px 25px;
     border-top-left-radius: 25px 25px;
-    background-color: #fcd7b6;
+    background-color: $pink;
     display: inline-block;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $accentDark;
+
+      .user-nav__like-icon {
+        fill: #fff;
+      }
+    }
+
+    &:active {
+      background-color: $pink;
+    }
   }
 
   &__like::after {
@@ -78,6 +94,19 @@
     border-top-right-radius: 25px 25px;
     background-color: #fcd7b6;
     display: inline-block;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $accentDark;
+
+      .user-nav__basket-icon {
+        fill: #fff;
+      }
+    }
+
+    &:active {
+      background-color: $pink;
+    }
   }
 
   &__basket-icon {
@@ -88,26 +117,4 @@
   &__basket-num {
     right: 25%;
   }
-
-  &__like:hover &__like-icon,
-  &__basket:hover &__basket-icon {
-    transform: scale(1.2);
-    transition: transform 0.3s;
-  }
-
-  &__like:active,
-  &__basket:active {
-    background-color: #fff;
-    transition: background-color 0.7s;
-  }
-}
-
-.icon-btn__svg--header {
-  margin-right: 0;
-  fill: #fff;
-}
-
-.icon-btn--header{
-  background-color: $accent;
-  margin-right: 0;
 }

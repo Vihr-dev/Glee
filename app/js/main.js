@@ -1,6 +1,6 @@
 $(function () {
 
-  $('.top-product__product-slider').slick({
+  $('.top-product__list').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
@@ -24,7 +24,7 @@ $(function () {
       scope: 'local'
     }
   };
-  
+
 
   var mixer1 = mixitup(containerMix1, config);
   var mixer = mixitup(containerMix2, config);

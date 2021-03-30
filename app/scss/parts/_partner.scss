@@ -1,14 +1,18 @@
 .partner {
-  background-color: #fef7f0;
-
-
-  &__inner {}
+  background-color: $bg;
 
   &__list {
     padding: 90px 0;
   }
 
   &__item {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+  }
+
+  &__link {
     opacity: 0.5;
     transition: opacity 0.3s;
 
@@ -20,17 +24,9 @@
       opacity: 0.5;
     }
 
-    &:focus a{
-      border: 10px solid $accent;
+    img {
+      object-fit: cover;
+      // display: block;
     }
   }
-
-  &__link img{
-    object-fit: cover;
-  }
 }
-
-// .slick-slider{
-//   display: flex;
-//   align-items: center;
-// }

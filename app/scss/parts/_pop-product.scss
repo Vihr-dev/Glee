@@ -4,25 +4,30 @@
     padding-top: 90px;
     margin-bottom: 105px;
     display: flex;
-    justify-content: space-between;
   }
 
   &__item {
     background-color: $pink;
-    padding: 50px 155px 75px 370px;
     position: relative;
-    display: flex;
-    flex-direction: column;
+    width: 870px;
+    height: 390px;
 
-    a{
-      max-width: 205px;
+    &:not(:last-child) {
+      margin-right: 30px;
     }
   }
 
-  &__img{
+  &__img {
     position: absolute;
-    left: 50px;
-    bottom: 70px;
+    left: 5%;
+    bottom: 22%;
+    object-fit: cover;
+  }
+
+  &__info{
+    margin-left: 45%;
+    padding-top: 70px;
+    padding-right: 10px;
   }
 
   &__title {
@@ -37,8 +42,8 @@
 
   &__text {
     @extend %rubik-400;
-    margin-bottom: 30px;
-    max-width: 350px;
+    margin-bottom: 35px;
+    max-width: 330px;
     @include clamp(2);
   }
 }

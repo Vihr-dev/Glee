@@ -1,43 +1,50 @@
 .services {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 35px 15px;
-  background-color: #fef7f0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fef7f0;
+  }
 
   &__item {
-    padding-left: 225px;
+    padding: 45px 0;
     flex-grow: 1;
-    position: relative;
+    display: flex;
+    justify-content: center;
 
-    &:not(:last-child)::after {
+
+    &:not(:last-child) {
+      border-right: 1px solid $accent;
+    }
+  }
+
+  &__info {
+    padding-left: 80px;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+
+    &:before {
       content: '';
       position: absolute;
-      width: 1px;
-      height: 160px;
-      top: -35px;
-      right: 0;
-      background-color: #e8e4df;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
     }
 
     &--time {
-      background-image: url('../images/icons/time.svg');
-      background-repeat: no-repeat;
-      background-position: 28% 20%;
+      background-image: url('../images/sprite.svg#time');
     }
 
     &--delivery {
-      background-image: url('../images/icons/delivery-truck.svg');
-      background-repeat: no-repeat;
-      background-position: 28% 20%;
+      background-image: url('../images/sprite.svg#delivery-truck');
     }
 
     &--payment {
-      background-image: url('../images/icons/credit-card.svg');
-      background-repeat: no-repeat;
-      background-position: 28% 20%;
+      background-image: url('../images/sprite.svg#credit-card');
     }
   }
+
 
   &__title {
     font-size: 18px;
@@ -52,10 +59,5 @@
     color: #585858;
     max-width: 213px;
     @include clamp(2);
-
-    span {
-      display: block;
-    }
   }
-
 }

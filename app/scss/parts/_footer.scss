@@ -31,7 +31,7 @@
   }
 
   &__account {
-    max-width: 90px;
+    max-width: 150px;
   }
 
   &__newsletter {
@@ -51,43 +51,53 @@
   }
 
   &__connect:active {
-    color: #7b7b7b;
+    color: $gray;
   }
 
-  &__connect,
-  &__item,
+  &__item {
+    font-size: 14px;
+    color: $gray;
+    @extend %rubik-400;
+    margin-bottom: 20px;
+
+    &:hover {
+      color: $accentDark;
+    }
+
+    &:active {
+      color: $gray;
+    }
+  }
+
+
+
   &__text {
     font-size: 14px;
-    color: #7b7b7b;
+    color: $gray;
     @extend %rubik-400;
     margin-bottom: 10px;
-  }
-
-  &__item:hover {
-    color: $accentDark;
-  }
-
-  &__item:active {
-    color: #7b7b7b;
-  }
-
-  &__text {
     max-width: 270px;
     margin-bottom: 40px;
   }
 
-  &__input {
-    background-color: #fef7f0;
-    border: 2px solid transparent;
+  &__form {
+    display: flex;
   }
 
   &__input {
+    background-color: $bg;
+    border: 2px solid transparent;
     max-width: 165px;
     width: 100%;
     padding: 11px 12px;
     @extend %dmsans-400;
     font-size: 12px;
     line-height: 1.2;
+    transition: border-color 0.3s;
+
+    &:hover {
+      border-color: $accent;
+    }
   }
 
   &__btn {
@@ -99,11 +109,11 @@
     @extend %dmsans-400;
     transition: background-color 0.3s;
 
-    &:hover{
+    &:hover {
       background-color: $accentDark;
     }
 
-    &:active{
+    &:active {
       color: $title;
     }
   }
@@ -123,6 +133,7 @@
   }
 
   &__item {
+    font-size: 14px;
     padding-left: 27px;
     position: relative;
     transition: color 0.3s;
