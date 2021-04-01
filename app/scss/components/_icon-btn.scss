@@ -13,7 +13,7 @@
     background-color: $accentDark;
     cursor: pointer;
 
-    .icon-btn__svg{
+    .icon-btn__svg {
       fill: #fff;
     }
   }
@@ -32,16 +32,34 @@
 
     &--header {
       margin-right: 0;
+    }
+
+    &--white{
       fill: #fff;
     }
   }
 
   &--search {
     margin-right: 20px;
+
+    @include a(576) {
+      width: 44px;
+      height: 44px;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
   }
 
-  &--header {
+  &--menu {
     background-color: $accent;
     margin-right: 0;
+    z-index: 5;
+
+    @include a(576) {
+      width: 44px;
+      height: 44px;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
   }
 }

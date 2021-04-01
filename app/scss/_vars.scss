@@ -49,13 +49,6 @@ $icons: #edf1f4;
   cursor: pointer;
 }
 
-@mixin clamp($clamp) {
-  display: -webkit-box;
-  -webkit-line-clamp: $clamp;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }

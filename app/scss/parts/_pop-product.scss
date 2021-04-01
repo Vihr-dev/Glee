@@ -1,9 +1,19 @@
 .pop-product {
 
   &__inner {
-    padding-top: 90px;
-    margin-bottom: 105px;
+    padding-top: 120px;
+    margin-bottom: 100px;
     display: flex;
+
+    @include a(992) {
+      flex-direction: column;
+      padding-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    @include a(768) {
+      margin-bottom: 10px;
+    }
   }
 
   &__item {
@@ -12,8 +22,25 @@
     width: 870px;
     height: 390px;
 
+    @include a(992) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    @include a(576) {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     &:not(:last-child) {
       margin-right: 30px;
+
+
+      @include a(992) {
+        margin-right: 0px;
+      }
     }
   }
 
@@ -22,12 +49,30 @@
     left: 5%;
     bottom: 22%;
     object-fit: cover;
+
+    @include a(1200) {
+      width: 160px;
+      height: 285px;
+    }
+
+    @include a(576) {
+      position: relative;
+      left: 0;
+      width: 130px;
+      height: 250px;
+      object-fit: contain;
+    }
   }
 
-  &__info{
+  &__info {
     margin-left: 45%;
     padding-top: 70px;
     padding-right: 10px;
+
+    @include a(576) {
+      padding: 0;
+      margin: 0;
+    }
   }
 
   &__title {
@@ -38,6 +83,13 @@
     margin-bottom: 20px;
     padding-top: 30px;
     @include clamp(2);
+
+    @include a(576) {
+      font-size: 18px;
+      padding-top: 10px;
+      text-align: center;
+      max-width: 100%;
+    }
   }
 
   &__text {
@@ -45,5 +97,12 @@
     margin-bottom: 35px;
     max-width: 330px;
     @include clamp(2);
+
+    @include a(576) {
+      font-size: 14px;
+      margin-bottom: 10px;
+      padding: 0 10px;
+      width: 100%;
+    }
   }
 }

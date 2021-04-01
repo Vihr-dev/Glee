@@ -1,5 +1,9 @@
 .footer {
   padding-top: 80px;
+
+  @include a(992) {
+    padding-top: 15px;
+  }
 }
 
 .logo__footer {
@@ -10,8 +14,13 @@
 .footer-top {
   display: flex;
   border-bottom: 1px solid #dae4e9;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   padding-bottom: 60px;
+
+  @include a(768) {
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__title {
     color: #1f2044;
@@ -23,20 +32,47 @@
 
   &__address {
     margin-right: 70px;
+
+    @include a(1200) {
+      margin-right: 40px;
+    }
+
+    @include a(768) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
   }
 
   &__services {
     max-width: 120px;
     margin-right: 180px;
+
+    @include a(1200) {
+      margin-right: 40px;
+    }
+
+    @include a(768) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
   }
 
   &__account {
     max-width: 150px;
+
+    @include a(1200) {
+      margin-right: 40px;
+      margin-bottom: 15px;
+    }
   }
 
   &__newsletter {
     margin-left: auto;
     padding: 0 10px;
+
+    @include a(768) {
+      margin-left: 0;
+    }
   }
 
   &__connect {
@@ -58,7 +94,7 @@
     font-size: 14px;
     color: $gray;
     @extend %rubik-400;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     &:hover {
       color: $accentDark;
@@ -77,7 +113,7 @@
     @extend %rubik-400;
     margin-bottom: 10px;
     max-width: 270px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
 
   &__form {
@@ -87,7 +123,7 @@
   &__input {
     background-color: $bg;
     border: 2px solid transparent;
-    max-width: 165px;
+    max-width: 175px;
     width: 100%;
     padding: 11px 12px;
     @extend %dmsans-400;
@@ -126,10 +162,20 @@
   margin-bottom: 35px;
   color: #7b7b7b;
 
+  @include a(768) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
   .copy,
   &__list {
     font-size: 14px;
     @extend %rubik-400;
+
+    @include a(768) {
+      order: 2;
+      margin-top: 20px;
+    }
   }
 
   &__item {

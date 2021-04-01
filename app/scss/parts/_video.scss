@@ -8,6 +8,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include a(992) {
+      height: 350px;
+    }
+
+    @include a(768) {
+      height: 230px;
+    }
+
+    @include a(768) {
+      height: 150px;
+    }
   }
 
   &__link {
@@ -38,6 +50,16 @@
     position: relative;
     box-shadow: 0px 6px 47px 3px rgba(166, 199, 243, 0.8);
     transition: transform 0.3s, background-color 0.3s;
+
+    @include a(768) {
+      width: 75px;
+      height: 75px;
+    }
+
+    @include a(576) {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   &__svg {
@@ -47,5 +69,15 @@
     width: 22px;
     height: 28px;
     fill: #fff;
+
+    @include a(768) {
+      top: 30%;
+      left: 40%;
+    }
+
+    @include a(576) {
+      top: 26%;
+      left: 37%;
+    }
   }
 }

@@ -1,5 +1,9 @@
 $(function () {
 
+  $('.icon-btn--menu').on('click', function () {
+    $('.header__inner').toggleClass('header__inner--active');
+  }); 
+
   $('.top-product__list').slick({
     slidesToShow: 1,
     slidesToScroll: 1,

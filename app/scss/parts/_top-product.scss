@@ -1,0 +1,155 @@
+.top-product {
+
+  &__list {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    position: relative;
+    padding: 12% 0 16% 17%;
+
+    @include a(1600) {
+      padding-left: 5%;
+    }
+
+    @include a(1200) {
+      padding-left: 2%;
+    }
+
+    @include a(992) {
+      padding: 7% 0 10% 2%;
+    }
+
+    @include a(768) {
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    max-width: 450px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 70px;
+    line-height: 1;
+    color: #243f4d;
+    @extend %rubik-500;
+    @include clamp(2);
+
+    @include a(1200) {
+      font-size: 50px;
+    }
+
+    @include a(992) {
+      font-size: 30px;
+      max-width: 350px;
+    }
+
+    @include a(768) {
+      margin-bottom: 0;
+    }
+
+    @include a(576) {
+      font-size: 18px;
+    }
+  }
+
+  &__info {
+    max-width: 365px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    @extend %rubik-400;
+    @include clamp(5);
+
+    @include a(1200) {
+      font-size: 14px;
+    }
+
+    @include a(992) {
+      max-width: 260px;
+    }
+
+    @include a(768) {
+      display: none;
+    }
+  }
+
+  &__btn {
+    @include a(768) {
+      order: 3;
+      margin-bottom: 20px;
+    }
+
+    @include a(576) {
+      padding: 10px 10px 10px 15px;
+      border-radius: 50px;
+    }
+  }
+
+  &__circle {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 10%;
+      right: 10%;
+      width: 635px;
+      height: 635px;
+      border-radius: 50%;
+      background-image: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+
+      @include a(1600) {
+        display: none;
+      }
+    }
+
+    @include a(768) {
+      height: 230px;
+    }
+
+    @include a(576) {
+      height: 130px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 35%;
+    right: 17%;
+    z-index: 1;
+    object-fit: fill;
+
+    @include a(1600) {
+      top: 30%;
+      right: 5%;
+    }
+
+    @include a(1200) {
+      transform: scale(0.8);
+      top: 20%;
+      right: 0;
+    }
+
+    @include a(992) {
+      transform: scale(0.6);
+      top: 14%;
+      right: -10%;
+    }
+
+    @include a(768) {
+      position: relative;
+      right: 0;
+      top: 0;
+    }
+
+    @include a(576) {
+      transform: scale(0.8);
+      height: 110px;
+      object-fit: contain;
+    }
+  }
+}

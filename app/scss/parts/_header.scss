@@ -1,14 +1,45 @@
 .header {
 
+  @include a(992) {
+    background-color: $bg;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 45px 0;
+
+    @include a(992) {
+      padding: 20px 0;
+      background-color: $bg;
+    }
+
+    @include a(576) {
+      padding: 25px 0;
+    }
   }
 
-  &__nav{
+  &__nav {
     margin-left: 9%;
+
+    @include a(1200) {
+      margin-left: 0px;
+    }
+
+    @include a(992) {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      color: $accentDark;
+      background-color: $bg;
+      z-index: 3;
+      transform: translateY(-200%);
+      transition: transform 1s;
+    }
   }
 
   &__link {
@@ -28,6 +59,13 @@
 
 .user-nav {
   display: flex;
+
+  @include a(992) {}
+
+  @include a(576) {
+    padding-top: 10px;
+    align-items: center;
+  }
 
   &__like {
     position: relative;
@@ -50,6 +88,12 @@
     &:active {
       background-color: $pink;
     }
+
+    @include a(576) {
+      width: 60px;
+      height: 44px;
+      display: block;
+    }
   }
 
   &__like::after {
@@ -61,6 +105,10 @@
     top: 8px;
     z-index: 1;
     background-color: #fff;
+
+    @include a(576) {
+      height: 25px;
+    }
   }
 
   &__like-icon,
@@ -83,6 +131,10 @@
     top: 15%;
     right: 22%;
     background-color: #fff;
+
+    @include a(576) {
+      display: none;
+    }
   }
 
   &__basket {
@@ -107,14 +159,27 @@
     &:active {
       background-color: $pink;
     }
+
+    @include a(576) {
+      width: 60px;
+      height: 44px;
+      margin-right: 5px;
+      display: block;
+    }
   }
 
   &__basket-icon {
-    top: 30%;
     left: 40%;
   }
 
   &__basket-num {
     right: 25%;
+  }
+}
+
+.header__inner.header__inner--active .header__nav {
+  @include a(992) {
+    transform: translateY(0);
+    padding: 60px 0 0;
   }
 }

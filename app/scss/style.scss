@@ -1,8 +1,9 @@
-@import 'vars';
-@import 'fonts';
 @import 'reset';
-@import 'global';
+@import 'mixin';
+@import 'fonts';
+@import 'vars';
 @import 'libs';
+@import 'global';
 
 
 @import './components/product-card';
@@ -14,7 +15,7 @@
 
 // style
 @import './parts/header';
-@import './parts/product-slider';
+@import './parts/top-product';
 @import './parts/services-icon';
 @import './parts/product-week';
 @import './parts/pop-product';

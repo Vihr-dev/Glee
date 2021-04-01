@@ -1,6 +1,10 @@
 .partner {
   background-color: $bg;
 
+  @include a(768) {
+    display: none;
+  }
+
   &__list {
     padding: 90px 0;
   }

@@ -20,6 +20,11 @@
         <img src="images/logo.png" width="146" height="39" alt="logo">
         <h1 class="sr-only">online store glee</h1>
       </a>
+      <!-- <button class="nav__btn">
+        <svg class="nav__burger">
+          <use xlink:href="images/sprite.svg#burger-menu"></use>
+        </svg>
+      </button> -->
       <ul class="nav header__nav">
         <li class="nav__item">
           <a class="nav__link header__link" href="#">Home+</a>
@@ -44,7 +49,7 @@
       <ul class="user-nav">
         <li>
           <button class="icon-btn icon-btn--search " type="button">
-            <svg class="icon-btn__svg">
+            <svg class="icon-btn__svg icon-btn__svg--header">
               <use xlink:href="images/sprite.svg#search-icon"></use>
             </svg>
             <span class="sr-only">product search</span>
@@ -68,8 +73,8 @@
             <span class="user-nav__basket-num">7</span>
           </a>
         </li>
-        <li><button class="icon-btn--header icon-btn" type="button">
-            <svg class="icon-btn__svg--header icon-btn__svg">
+        <li><button class="icon-btn--menu icon-btn" type="button">
+            <svg class="icon-btn__svg--header icon-btn__svg icon-btn__svg--white">
               <use xlink:href="images/sprite.svg#menu-icon"></use>
             </svg>
             <span class="sr-only">change page view to grid</span>
@@ -85,8 +90,8 @@
     Slider top product of the week
   </h2>
   <div class="container container--big">
-    <ul class="top-product__list slider">
-      <li class="top-product__item" style="background-image: url(images/product-slider-bg.jpg);">
+    <ul class="top-product__list slider" style="background-image: url(images/slider-bg.jpg);">
+      <li class="top-product__item">
         <div class="top-product__text">
           Smart and trendy
         </div>
@@ -95,7 +100,7 @@
             Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
           </p>
         </div>
-        <a class="btn-arrow" href="#">
+        <a class="btn-arrow top-product__btn" href="#">
           Shop now
           <svg class="btn-arrow__svg">
             <use xlink:href="images/sprite.svg#arrow"></use>
@@ -106,7 +111,7 @@
         </div>
       </li>
 
-      <li class="top-product__item" style="background-image: url(images/product-slider-bg.jpg);">
+      <li class="top-product__item">
         <div class="top-product__text">
           Smart and trendy
         </div>
@@ -115,7 +120,7 @@
             Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
           </p>
         </div>
-        <a class="btn-arrow" href="#">
+        <a class="btn-arrow top-product__btn" href="#">
           Shop now
           <svg class="btn-arrow__svg">
             <use xlink:href="images/sprite.svg#arrow"></use>
@@ -126,7 +131,7 @@
         </div>
       </li>
 
-      <li class="top-product__item" style="background-image: url(images/product-slider-bg.jpg);">
+      <li class="top-product__item">
         <div class="top-product__text">
           Smart and trendy
         </div>
@@ -135,7 +140,7 @@
             Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
           </p>
         </div>
-        <a class="btn-arrow" href="#">
+        <a class="btn-arrow top-product__btn" href="#">
           Shop now
           <svg class="btn-arrow__svg">
             <use xlink:href="images/sprite.svg#arrow"></use>
@@ -516,24 +521,24 @@
                   <svg class="icon-btn__svg">
                     <use xlink:href="images/sprite.svg#search-icon"></use>
                   </svg>
-                  <span class="sr-only">learn more about the product</span>
                 </a>
+                <span class="sr-only">learn more about the product</span>
               </li>
               <li class="icon-btn">
                 <button class="product-card__btn href=" #">
                   <svg class="icon-btn__svg">
                     <use xlink:href="images/sprite.svg#basket-icon"></use>
                   </svg>
-                  <span class="sr-only">add item to cart</span>
                 </button>
+                <span class="sr-only">add item to cart</span>
               </li>
               <li class="icon-btn">
                 <button class="product-card__btn" href="#">
                   <svg class="icon-btn__svg">
                     <use xlink:href="images/sprite.svg#like-icon"></use>
                   </svg>
-                  <span class="sr-only">add item to favorites</span>
                 </button>
+                <span class="sr-only">add item to favorites</span>
               </li>
             </ul>
             <a class="product-card__link" href="#">
@@ -751,7 +756,6 @@
       <div class="articles__items">
         <article class="articles__item">
           <a class="articles__link" href="#">
-            <span class="sr-only">go to full article</span>
             <img class="articles__img" src="images/blog/blog1.jpg" width="370" height="250" alt="photo article">
             <h3 class="articles__text" href="#">
               Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
@@ -760,54 +764,49 @@
               <time class="articles__data" datetime="2020-02-28">
                 28 JANUARY, 2020
               </time>
-              <a class="articles__author" href="#">
+              <div class="articles__author" href="#">
                 BY ADMIN
-              </a>
+              </div>
             </div>
-            <a class="articles__btn" href="#">
+            <div class="articles__btn" href="#">
               News
-              <span class="sr-only">link view all blog news</span>
-            </a>
+            </div>
           </a>
         </article>
 
         <article class="articles__item">
           <a class="articles__link" href="#">
-            <span class="sr-only">go to full article</span>
             <img class="articles__img" src="images/blog/blog2.jpg" width="370" height="250" alt="photo article">
             <h3 class="articles__text" href="#">
               Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
             </h3>
             <div class="articles__info">
               <time class="articles__data" datetime="2020-02-28">28 JANUARY, 2020</time>
-              <a class="articles__author" href="#">
+              <div class="articles__author" href="#">
                 BY ADMIN
-              </a>
+              </div>
             </div>
-            <a class="articles__btn" href="#">
+            <div class="articles__btn" href="#">
               News
-              <span class="sr-only">link view all blog news</span>
-            </a>
+            </div>
           </a>
         </article>
 
         <article class="articles__item">
           <a class="articles__link" href="#">
-            <span class="sr-only">go to full article</span>
             <img class="articles__img" src="images/blog/blog3.jpg" width="370" height="250" alt="photo article">
             <h3 class="articles__text" href="#">
               Rncididunt ut labore et dolore magna aliqua. Ut enim
             </h3>
             <div class="articles__info">
               <time class="articles__data" datetime="2020-02-28">28 JANUARY, 2020</time>
-              <a class="articles__author" href="#">
+              <div class="articles__author" href="#">
                 BY ADMIN
-              </a>
+              </div>
             </div>
-            <a class="articles__btn" href="#">
+            <div class="articles__btn" href="#">
               News
-              <span class="sr-only">link view all blog news</span>
-            </a>
+            </div>
           </a>
         </article>
       </div>
