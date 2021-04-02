@@ -5,25 +5,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glee</title>
+  <link rel="icon" href="images/sofa.ico" type="images/sofa.ico">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Document</title>
 </head>
 
 <body>
 
-  @@include('global/_header.html')
 
+  @@include('../parts/global/_header.html')
   <main>
-    @@include('home/_top-product.html')
-    @@include('home/_services.html')
-    @@include('home/_product-week.html')
-    @@include('home/_new-design.html')
-    @@include('home/_video.html')
-    @@include('home/_articles.html')
-    @@include('home/_partner.html')
-  </main>
+    @@include('../parts/home/_top-product.html')
+    @@include('../parts/home/_services.html')
+    @@include('../parts/home/_product-week.html')
+    @@include('../parts/home/_new-design.html')
+    @@include('../parts/home/_video.html')
+    @@include('../parts/global/home/_articles.html')
+    @@include('../parts/global/_partner.html')
 
-  @@include('global/_footer.html')
+  </main>
+  @@include('../parts/global/_footer.html')
+
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/main.min.js"></script>

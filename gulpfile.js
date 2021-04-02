@@ -29,12 +29,12 @@ function browsersync() {
 }
 
 function html() {
-  return src('app//index.html')
+  return src('app/**/*.html')
     .pipe(include({
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(dest('app'))
+    .pipe(dest('app/'))
     .pipe(browserSync.stream())
 }
 
