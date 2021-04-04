@@ -78,3 +78,15 @@ button:focus {
   /* added line */
   border: 0;
 }
+
+// section name-page
+
+.name-page{
+  background-color: $icons;
+
+  &__title{
+    @extend %rubik-300;
+    font-size: 36px;
+    padding-top: 35px;
+  }
+}

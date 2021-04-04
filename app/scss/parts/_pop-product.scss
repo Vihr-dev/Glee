@@ -18,9 +18,15 @@
 
   &__item {
     background-color: $pink;
-    position: relative;
+    display: flex;
+    justify-content: space-evenly;
     width: 870px;
     height: 390px;
+
+    @include a(1200) {
+      align-items: center;
+      height: 310px;
+    }
 
     @include a(992) {
       width: 100%;
@@ -45,29 +51,32 @@
   }
 
   &__img {
-    position: absolute;
-    left: 5%;
-    bottom: 22%;
     object-fit: cover;
+    margin-top: -10%;
 
     @include a(1200) {
-      width: 160px;
-      height: 285px;
+      width: 20%;
+      object-fit: contain;
+      margin-top: 0;
+      height: 100%;
+    }
+
+    @include a(992) {
+      width: 15%;
     }
 
     @include a(576) {
-      position: relative;
-      left: 0;
-      width: 130px;
-      height: 250px;
-      object-fit: contain;
+      margin: 10px 0;
+      width: 35%;
     }
   }
 
   &__info {
-    margin-left: 45%;
     padding-top: 70px;
-    padding-right: 10px;
+
+    @include a(1200) {
+      padding-top: 0;
+    }
 
     @include a(576) {
       padding: 0;
@@ -81,8 +90,11 @@
     line-height: 1.2;
     max-width: 250px;
     margin-bottom: 20px;
-    padding-top: 30px;
     @include clamp(2);
+
+    @include a(768) {
+      font-size: 20px;
+    }
 
     @include a(576) {
       font-size: 18px;
@@ -98,11 +110,12 @@
     max-width: 330px;
     @include clamp(2);
 
-    @include a(576) {
+    @include a(768) {
       font-size: 14px;
-      margin-bottom: 10px;
-      padding: 0 10px;
-      width: 100%;
+    }
+
+    @include a(576) {
+      display: none;
     }
   }
 }

@@ -23,16 +23,15 @@
       opacity: 0.5;
       transition: opacity 0.3s;
 
-      @include a(768) {
+      @include a(992) {
         width: 20px;
         height: 20px;
         font-size: 0;
       }
 
       @include a(567) {
-        width: 15px;
-        height: 15px;
-        font-size: 0;
+        border-radius: 0;
+        height: 5px;
       }
     }
 
@@ -51,5 +50,29 @@
         outline: $accent solid 1px;
       }
     }
+  }
+}
+
+.slick-slider .top-product__item {
+  display: flex !important;
+  height: 75vh;
+  align-items: center;
+  justify-content: space-around;
+
+  @include a(1200) {
+    justify-content: space-between;
+    height: 50vh;
+  }
+
+  @include a(992) {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  @include a(768) {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
   }
 }

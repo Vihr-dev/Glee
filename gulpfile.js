@@ -29,7 +29,7 @@ function browsersync() {
 }
 
 function html() {
-  return src('app/**/*.html')
+  return src('app/parts/**/*.html')
     .pipe(include({
       prefix: '@@',
       basepath: '@file'
@@ -137,8 +137,8 @@ function cleanDist() {
 function watching() {
   watch(['app/scss/**/*.scss'], styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-  watch(['app/parts/*.html'], html)
-  watch(['app/**/*.html']).on('change', browserSync.reload);
+  watch(['app/parts/**/*.html'], html)
+  watch(['app/parts/**/*.html']).on('change', browserSync.reload);
 }
 
 exports.html = html;

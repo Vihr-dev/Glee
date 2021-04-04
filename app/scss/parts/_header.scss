@@ -16,7 +16,7 @@
     }
 
     @include a(576) {
-      padding: 25px 0;
+      padding: 0 0 10px;
     }
   }
 
@@ -44,6 +44,16 @@
 
   &__link {
     opacity: 1;
+
+    @include a(992) {
+      display: block;
+      padding: 10px;
+    }
+
+    @include a(576) {
+      font-size: 14px;
+      padding: 7px;
+    }
   }
 
   &__link:hover {
@@ -180,6 +190,10 @@
 .header__inner.header__inner--active .header__nav {
   @include a(992) {
     transform: translateY(0);
-    padding: 60px 0 0;
+    padding: 10% 0 0;
+
+    @include a(768) {
+      padding: 15% 0 0;
+    }
   }
 }

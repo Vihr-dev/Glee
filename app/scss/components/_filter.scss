@@ -8,14 +8,17 @@
   }
 
   @include a(576) {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 15px;
-    font-size: 14px;
+    display: block;
   }
 
   &__category {
     margin: 0 7px;
+    outline-color: $accent;
+
+    @include a(576) {
+      text-align: center;
+      padding: 5px 0;
+    }
   }
 
   &__btn {
@@ -28,16 +31,24 @@
 
     &:hover {
       color: $title;
-      background-color: transparent;
       cursor: pointer;
     }
 
     &:focus {
+
       color: $title;
     }
 
     &:active {
       color: #fff;
     }
+
+    @include a(576) {
+      width: 100%;
+    }
   }
+}
+
+.mixitup-control-active {
+  border-bottom: 1px solid $accent;
 }

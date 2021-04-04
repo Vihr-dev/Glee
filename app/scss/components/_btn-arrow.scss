@@ -47,8 +47,12 @@
       }
     }
 
+    @include a(1200) {
+      padding: 10px 10px 10px 15px;
+    }
+
     @include a(576) {
-      width: 210px;
+      width: 185px;
       display: block;
       margin: 0 auto 15px;
     }
