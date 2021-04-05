@@ -43,7 +43,7 @@ button:focus {
   text-align: center;
 
   @include a(576) {
-    font-size: 20px;
+    font-size: 20px;  
   }
 }
 
@@ -81,12 +81,45 @@ button:focus {
 
 // section name-page
 
-.name-page{
+.name-page {
+  color: $namePage;
   background-color: $icons;
+  text-align: center;
 
-  &__title{
+  &__title {
     @extend %rubik-300;
     font-size: 36px;
-    padding-top: 35px;
+    padding-top: 15px;
+
+    @include a(768) {
+      font-size: 24px;
+      padding-top: 10px;
+    }
+  }
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  justify-content: center;
+  counter-reset: $namePage;
+  @extend %rubik-400;
+  font-size: 14px;
+  padding-bottom: 30px;
+
+  @include a(768){
+    padding-bottom: 10px;
+  }
+
+  &__item{
+    &:not(:last-child){
+      padding-right: 5px;
+    }
+  }
+
+  &__link{
+    transform: opacity 0.3s;
+    &:hover{
+      opacity: 0.5;
+    }
   }
 }

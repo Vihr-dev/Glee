@@ -13,7 +13,7 @@
 @import './components/filter';
 @import './components/icon-btn';
 
-// style
+// style home page
 @import './parts/header';
 @import './parts/top-product';
 @import './parts/services-icon';
@@ -24,3 +24,8 @@
 @import './parts/articles';
 @import './parts/partner';
 @import './parts/footer';
+
+// style abuot page
+@import './about/mission';
+@import './about/advantage';
+@import './about/team';

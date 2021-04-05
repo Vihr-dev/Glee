@@ -1,0 +1,119 @@
+[33mcommit b659d2508ef84567df706722b31497cc33233fb7[m[33m ([m[1;36mHEAD -> [m[1;32mdev[m[33m, [m[1;31morigin/dev[m[33m)[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Sun Apr 4 13:57:11 2021 +0400
+
+    fix dz 13
+
+[33mcommit 2a2787cdec639ec5f571be294f02d9b85b520eaf[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Fri Apr 2 21:54:41 2021 +0400
+
+    test include
+
+[33mcommit 02acc2e489b007e0771e3f2898f69e5b1b10fc11[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Fri Apr 2 21:30:44 2021 +0400
+
+    test gulp include
+
+[33mcommit f498e3cbcba247f3fbff34a92322daef365a93be[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Fri Apr 2 21:28:47 2021 +0400
+
+    test gulp include
+
+[33mcommit d11c0f558eff8b51dc7d1e543cc51fc52f57d1f4[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Thu Apr 1 22:59:09 2021 +0400
+
+    adaptiv
+
+[33mcommit b8d64cd5a6a5d8a720230239e95b858c66e496e9[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Tue Mar 30 23:39:08 2021 +0400
+
+    fix dz13, add partners
+
+[33mcommit a783eefdfefb4297b961c7572e0af0a0fc43ed0a[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Sun Mar 28 20:32:16 2021 +0400
+
+    small fix
+
+[33mcommit ebcfed7b8ac9eaefdd46bc771c5cd6aafe43ca62[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Sun Mar 28 17:04:00 2021 +0400
+
+    add blog, add partners
+
+[33mcommit c6296ee060d82b7ee72217f91a88c3023f9dad9d[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Sun Mar 28 01:18:51 2021 +0400
+
+    add include, add new-design, add video
+
+[33mcommit 44a25c527b2d4da54080c8023098c2f92b694e17[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Sat Mar 27 17:38:03 2021 +0400
+
+    chekpoint for test gulp include
+
+[33mcommit ff54eaaa92c2e376d694a21dfc49a568168e0519[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Fri Mar 26 01:50:08 2021 +0400
+
+    fix mistake homework, add svgSprite, add pop-product
+
+[33mcommit 4bf85d603c26995af22484f55d623d4d3accab27[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Sun Mar 21 16:29:23 2021 +0400
+
+    cfix for check-list
+
+[33mcommit ebe913fcd6230d571813a8299dd8d3242ffccff9[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Sun Mar 21 14:43:54 2021 +0400
+
+    add product-week.scss, add services-icon.scss, add filter mixitup
+
+[33mcommit e6b52f286471e462196877d0cf711e9721409118[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Thu Mar 18 01:47:49 2021 +0400
+
+    add interactive footer
+
+[33mcommit cb88ccd767a90cbe0dc48ca2c685d188fa1fffc9[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Thu Mar 18 01:33:13 2021 +0400
+
+    add services-icon.scss
+
+[33mcommit e9d593e5a17cd5afdaf94b85e47b1ef8f82e7c5b[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Wed Mar 17 23:17:32 2021 +0400
+
+    add footer
+
+[33mcommit 85d972677044bbea2a4c15997c72d472d81f9e0a[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Tue Mar 16 23:06:51 2021 +0400
+
+    fix product-slider
+
+[33mcommit 39f06bbc59d96dd71ef7c22d876ed0f64937cad6[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Tue Mar 16 01:13:55 2021 +0400
+
+    add product-slider, add interactive, fix fonts, fix jquery
+
+[33mcommit 720f014bb2fad6058988289b958264b898c83157[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Sun Mar 14 22:28:39 2021 +0400
+
+    add fonts, add header.scss
+
+[33mcommit 4166e935223a4ab6f192c6b2730adcbdeb3b26c6[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Vihr-dev <ilya01757@gmail.com>
+Date:   Sat Mar 13 20:13:38 2021 +0400
+
+    start glee

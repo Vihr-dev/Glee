@@ -37,6 +37,19 @@
     &--white{
       fill: #fff;
     }
+
+    &--gray{
+      fill:#888;
+      width: 18px;
+      height: 18px;
+      top: 26%;
+      left: 28%;
+    }
+
+    &--googel{
+      width: 23px;
+      height: 15px;
+    }
   }
 
   &--search {
@@ -61,5 +74,10 @@
       margin-right: 5px;
       margin-left: 5px;
     }
+  }
+
+  &--social{
+    width: 40px;
+    height: 40px;
   }
 }

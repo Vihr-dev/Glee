@@ -6,6 +6,7 @@ $pink: #fcd7b6;
 $bg: #fef7f0;
 $gray: #7b7b7b;
 $icons: #edf1f4;
+$namePage: #222933;
 
 
 %dmsans-700 {
@@ -31,6 +32,11 @@ $icons: #edf1f4;
 %rubik-400 {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
+}
+
+%rubik-300 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
 }
 
 %poppins-700 {
