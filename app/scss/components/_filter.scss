@@ -34,13 +34,12 @@
       cursor: pointer;
     }
 
-    &:focus {
-
-      color: $title;
-    }
-
     &:active {
       color: #fff;
+    }
+
+    &:focus {
+      color: $title;
     }
 
     @include a(576) {

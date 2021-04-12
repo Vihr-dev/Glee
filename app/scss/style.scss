@@ -12,6 +12,8 @@
 @import './components/btn-arrow';
 @import './components/filter';
 @import './components/icon-btn';
+@import './components/rangslider';
+@import './components/pagination';
 
 // style home page
 @import './parts/header';
@@ -29,3 +31,9 @@
 @import './about/mission';
 @import './about/advantage';
 @import './about/team';
+
+// style shop page
+@import './shop/shop-filters';
+@import './shop/shop-content';
+
+

@@ -118,6 +118,11 @@ button:focus {
 
   &__link{
     transform: opacity 0.3s;
+
+    &::after{
+      content: '/';
+      
+    }
     &:hover{
       opacity: 0.5;
     }

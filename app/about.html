@@ -15,7 +15,11 @@
   <div class="container container--big">
     <nav class="header__inner">
       <a class="logo" href="#">
-        <img src="images/logo.png" width="146" height="39" alt="logo">
+        <picture>
+          <source srcset="images/logo-mobile.svg" media="(max-width: 576px)" width="70">
+          <img src="images/logo.png" width="146" height="39" alt="logo">
+        </picture>
+        <!-- <img src="images/logo.png" width="146" height="39" alt="logo"> -->
         <h1 class="sr-only">online store glee</h1>
       </a>
       <ul class="nav header__nav">
@@ -81,32 +85,31 @@
   </div>
 </header>
   <main>
-    <!-- name-page/mission/advantage -->
-
-<div class="name-page">
-  <h2 class="name-page__title">
-    About us
-  </h2>
-  <ul class="breadcrumbs" href="#">
-    <li class="breadcrumbs__item">
-      <a class="breadcrumbs__link" href="#">
-        Home /
-      </a>
-    </li>
-    <li class="breadcrumbs__item">
-      <span class="breadcrumbs__link" href="#">
-        About
-      </span>
-    </li>
-  </ul>
-</div>
+    <div class="name-page">
+      <h1 class="name-page__title">
+        About us
+      </h1>
+      <ul class="breadcrumbs" href="#">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">
+            Home
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__page">
+            About
+          </span>
+        </li>
+      </ul>
+    </div>
+    <!-- /mission/advantage -->
 <section class="mission">
   <div class="container">
     <div class="mission__bg" style="background-image: url(images/mission-bg.jpg);">
       <div class="mission__inner">
         <div class="mission__sub-title">
-          <div class="yers">12</div>
-          <div class="yers__text">
+          <div class="mission__yers">12</div>
+          <div class="mission__yers-text">
             Years
             Experience
             Working

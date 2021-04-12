@@ -34,21 +34,26 @@
       margin-right: 0;
     }
 
-    &--white{
+    &--white {
       fill: #fff;
     }
 
-    &--gray{
-      fill:#888;
+    &--gray {
+      fill: #888;
       width: 18px;
       height: 18px;
       top: 26%;
       left: 28%;
     }
 
-    &--googel{
+    &--googel {
       width: 23px;
       height: 15px;
+    }
+
+    @include a(768) {
+      left: 30%;
+      top: 30%;
     }
   }
 
@@ -76,7 +81,7 @@
     }
   }
 
-  &--social{
+  &--social {
     width: 40px;
     height: 40px;
   }

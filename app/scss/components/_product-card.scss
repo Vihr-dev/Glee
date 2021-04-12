@@ -27,6 +27,12 @@
     align-items: center;
   }
 
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__list {
     position: absolute;
     top: 45%;
@@ -50,13 +56,14 @@
   }
 
   &__img {
-    width: 100%;
+    width: 90%;
     height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
 
     img {
+      height: 80%;
       object-fit: contain;
     }
   }
@@ -90,12 +97,16 @@
     border-color: transparent;
 
     &:hover {
-      background-color: $accent;
+      background-color: $accentDark;
       cursor: pointer;
     }
 
     &:active {
-      background-color: $icons;
+      background-color: $accent;
     }
+  }
+
+  &__wrapper {
+    display: none;
   }
 }

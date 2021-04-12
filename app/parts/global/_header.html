@@ -2,7 +2,11 @@
   <div class="container container--big">
     <nav class="header__inner">
       <a class="logo" href="#">
-        <img src="images/logo.png" width="146" height="39" alt="logo">
+        <picture>
+          <source srcset="images/logo-mobile.svg" media="(max-width: 576px)" width="70">
+          <img src="images/logo.png" width="146" height="39" alt="logo">
+        </picture>
+        <!-- <img src="images/logo.png" width="146" height="39" alt="logo"> -->
         <h1 class="sr-only">online store glee</h1>
       </a>
       <ul class="nav header__nav">
