@@ -57,4 +57,13 @@
       margin: 0 auto 15px;
     }
   }
+
+  &--blog{
+    background-color: transparent;
+    color: $accent;
+    border-color: $accent;
+    .btn-arrow__svg{
+      fill: $accent;
+    }
+  }
 }
