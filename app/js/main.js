@@ -1,5 +1,37 @@
 $(function () {
 
+  $('.related-product__slider').slick({
+    slidesToShow: 4,
+    prevArrow: '<button type="button" class="slick-btn slick-prev"><svg class="slick-svg"><use xlink:href="images/sprite.svg#arrow-l"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-btn slick-next"><svg class="slick-svg"><use xlink:href="images/sprite.svg#arrow-r"></use></svg></button>'
+  })
+
+  $('.tabs__link').on('click', function (e) {
+    e.preventDefault();
+    $('.tabs__link').removeClass('tabs__link--active');
+    $(this).addClass('tabs__link--active');
+
+    $('.tabs__content-item').removeClass('tabs__content-item--active');
+    $($(this).attr('href')).addClass('tabs__content-item--active');
+  })
+
+  $('.photo-slide__min').slick({
+    asNavFor: '.photo-slide__main',
+    focusOnSelect: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical: true,
+  });
+
+  $('.photo-slide__main').slick({
+    draggable: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    sNavFor: '.photo-slide__min'
+  });
+
   $('.filter-shop__btn').on('click', function () {
     $('.shop__inner').removeClass('shop__inner--active');
   })
@@ -17,7 +49,7 @@ $(function () {
     $('.shop-cards__item').removeClass('product-card--row');
   });
 
-  $('.shop-setings__select').styler();
+  $('.shop-setings__select, .product__numb').styler();
 
   $(".recent-product__star").rateYo({
     rating: 3.6,
@@ -39,12 +71,12 @@ $(function () {
 
   $('.filter-price__input').ionRangeSlider({
     type: "double",
-      grid: false,
-      min: 0.00,
-      max: 1000.00,
-      from: 200.00,
-      to: 800.00,
-      step: 0.01,
+    grid: false,
+    min: 0.00,
+    max: 1000.00,
+    from: 200.00,
+    to: 800.00,
+    step: 0.01,
     onStart: function (data) {
       $('.filter-price__from').text(data.from);
       $('.filter-price__to').text(data.to);
