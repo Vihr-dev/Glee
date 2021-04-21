@@ -1,0 +1,31 @@
+.terms {
+
+  &__inner{
+    padding-top: 100px;
+  }
+
+  &__subtitle {
+    @extend %rubik-500;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  &__list {
+    list-style-type: decimal-leading-zero;
+    margin-left: 30px;
+  }
+
+  &__item {
+    @extend %rubik-400;
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__text {
+    @extend %rubik-400;
+    margin-bottom: 30px;
+  }
+}

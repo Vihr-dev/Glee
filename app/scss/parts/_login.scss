@@ -1,0 +1,133 @@
+.login {
+
+  &__inner {
+    padding-top: 105px;
+    max-width: 470px;
+    margin: 0 auto;
+    margin-bottom: 115px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    border-bottom: 2px solid $icons;
+  }
+
+  &__label {
+    @extend %rubik-400;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 30px;
+
+    &:hover {
+      .login__box {
+        background-color: $accent;
+      }
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid $accent;
+    padding: 15px 5px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $bg;
+    }
+  }
+
+  &__btn {
+    @extend %button;
+    @extend %rubik-500;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    transition: background-color 0.3s color 0.3s;
+
+    &:hover {
+      color: #fff;
+      background-color: $accentDark;
+    }
+  }
+
+  &__aside {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__checkbox {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+
+    &:checked+.login__box {
+      background-image: url('../images/sprite.svg#arrow-right');
+      background-repeat: no-repeat;
+    }
+
+    &:focus+.login__box {
+      background-color: $accent;
+    }
+  }
+
+  &__box {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    background-color: $icons;
+  }
+
+  &__bottom {
+    text-align: center;
+  }
+
+  &__registered {
+    display: block;
+  }
+
+  &__link {
+    @extend %rubik-400;
+    font-size: 14px;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  &__bottom {
+    @extend %rubik-400;
+    font-size: 14px;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+    display: inline-block;
+  }
+
+  &__registered {
+    width: 100%;
+    padding: 10px 0;
+    border: 2px solid $accent;
+    transition: background-color 0.3s;
+
+    &:hover{
+      background-color: $accent;
+    }
+    &:active{
+      background-color: #fff;
+    }
+  }
+}

@@ -15,7 +15,7 @@
   <main>
     <div class="name-page">
       <h1 class="name-page__title">
-        Blog
+        Contact
       </h1>
       <ul class="breadcrumbs" href="#">
         <li class="breadcrumbs__item">
@@ -25,17 +25,34 @@
         </li>
         <li class="breadcrumbs__item">
           <span class="breadcrumbs__page">
-            Blog
+            Contact
           </span>
         </li>
       </ul>
     </div>
-    @@include('../parts/blog-list/_blog-list.html')
+    @@include('../parts/contact/_contact.html')
+    @@include('../parts/global/_articles.html')
     @@include('../parts/global/_partner.html')
   </main>
   @@include('../parts/global/_footer.html')
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async>
+  </script>
+   
+  <script>
+    let map;
+
+    function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+    center: {
+    lat: 29.753713390942973,
+    lng: -95.36151269358555
+    },
+    zoom: 8,
+    });
+    }
+  </script>
   <script src="js/main.min.js"></script>
 
 </body>
