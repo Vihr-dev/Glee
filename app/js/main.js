@@ -3,7 +3,27 @@ $(function () {
   $('.related-product__slider').slick({
     slidesToShow: 4,
     prevArrow: '<button type="button" class="slick-btn slick-prev"><svg class="slick-svg"><use xlink:href="images/sprite.svg#arrow-l"></use></svg></button>',
-    nextArrow: '<button type="button" class="slick-btn slick-next"><svg class="slick-svg"><use xlink:href="images/sprite.svg#arrow-r"></use></svg></button>'
+    nextArrow: '<button type="button" class="slick-btn slick-next"><svg class="slick-svg"><use xlink:href="images/sprite.svg#arrow-r"></use></svg></button>',
+    responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
   })
 
   $('.tabs__link').on('click', function (e) {
@@ -21,6 +41,12 @@ $(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     vertical: true,
+    responsive: [{
+      breakpoint: 769,
+      settings: {
+        vertical: false,
+      }
+    }]
   });
 
   $('.photo-slide__main').slick({
@@ -94,6 +120,10 @@ $(function () {
 
   $('.shop-setings__pop-up').on('click', function () {
     $('.shop__inner').toggleClass('shop__inner--active');
+  });
+
+  $('.blog__pop-up').on('click', function () {
+    $('.blog__inner').toggleClass('blog__inner--active');
   });
 
   $('.top-product__list').slick({
