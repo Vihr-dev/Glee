@@ -1,0 +1,130 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $default;
+  @extend %dmsans-700;
+}
+
+main {
+  flex-grow: 1;
+}
+
+button {
+  cursor: pointer;
+}
+
+a:focus,
+button:focus {
+  outline: $accent solid 2px;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  &--big {
+    max-width: 1800px;
+  }
+}
+
+.title {
+  font-size: 36px;
+  @extend %dmsans-700;
+  color: #191919;
+  line-height: 1.2;
+  text-align: center;
+
+  @include a(576) {
+    font-size: 20px;  
+  }
+}
+
+.logo {
+  z-index: 5;
+  padding-bottom: 2px;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  @include a(576) {
+    transform: scale(0.8);
+    object-fit: contain;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  /* added line */
+  border: 0;
+}
+
+// section name-page
+
+.name-page {
+  color: $namePage;
+  background-color: $icons;
+  text-align: center;
+
+  &__title {
+    @extend %rubik-300;
+    font-size: 36px;
+    padding-top: 15px;
+
+    @include a(768) {
+      font-size: 24px;
+      padding-top: 10px;
+    }
+  }
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  justify-content: center;
+  counter-reset: $namePage;
+  @extend %rubik-400;
+  font-size: 14px;
+  padding-bottom: 30px;
+
+  @include a(768){
+    padding-bottom: 10px;
+  }
+
+  &__item{
+    &:not(:last-child){
+      padding-right: 5px;
+    }
+  }
+
+  &__link{
+    transform: opacity 0.3s;
+
+    &::after{
+      content: '/';
+      
+    }
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+}

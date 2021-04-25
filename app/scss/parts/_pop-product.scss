@@ -1,0 +1,121 @@
+.pop-product {
+
+  &__inner {
+    padding-top: 120px;
+    margin-bottom: 100px;
+    display: flex;
+
+    @include a(992) {
+      flex-direction: column;
+      padding-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    @include a(768) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__item {
+    background-color: $pink;
+    display: flex;
+    justify-content: space-evenly;
+    width: 870px;
+    height: 390px;
+
+    @include a(1200) {
+      align-items: center;
+      height: 310px;
+    }
+
+    @include a(992) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    @include a(576) {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &:not(:last-child) {
+      margin-right: 30px;
+
+
+      @include a(992) {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+    margin-top: -10%;
+
+    @include a(1200) {
+      width: 20%;
+      object-fit: contain;
+      margin-top: 0;
+      height: 100%;
+    }
+
+    @include a(992) {
+      width: 15%;
+    }
+
+    @include a(576) {
+      margin: 10px 0;
+      width: 35%;
+    }
+  }
+
+  &__info {
+    padding-top: 70px;
+
+    @include a(1200) {
+      padding-top: 0;
+    }
+
+    @include a(576) {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__title {
+    color: $accentDark;
+    font-size: 26px;
+    line-height: 1.2;
+    max-width: 250px;
+    margin-bottom: 20px;
+    @include clamp(2);
+
+    @include a(768) {
+      font-size: 20px;
+    }
+
+    @include a(576) {
+      font-size: 18px;
+      padding-top: 10px;
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+
+  &__text {
+    @extend %rubik-400;
+    margin-bottom: 35px;
+    max-width: 330px;
+    @include clamp(2);
+
+    @include a(768) {
+      font-size: 14px;
+    }
+
+    @include a(576) {
+      display: none;
+    }
+  }
+}

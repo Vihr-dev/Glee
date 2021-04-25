@@ -1,0 +1,36 @@
+.nav {
+  display: flex;
+
+  &__item {
+    @include a(992) {
+      text-align: center;
+    }
+  }
+
+  &__item:not(:first-child) {
+    margin-left: 35px;
+
+    @include a(1200) {
+      margin-left: 15px;
+    }
+
+    @include a(992) {
+      margin-left: 0px;
+    }
+  }
+
+  &__link {
+    @extend %rubik-500;
+  }
+
+  &__btn {
+    background-color: transparent;
+    border-color: transparent;
+    display: none;
+
+    @include a(992) {
+      display: block;
+      order: 3;
+    }
+  }
+}

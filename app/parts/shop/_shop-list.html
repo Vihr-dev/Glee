@@ -1,0 +1,172 @@
+<section class="shop">
+  <div class="container">
+    <div class="shop__inner">
+      <ul class="shop__filters">
+
+        <li class="filter-shop">
+          <h2 class="filter-shop__title">
+            Сategory
+          </h2>
+          <div class="filter-shop__item">
+            <input class="filter-shop__input" id="chair" type="checkbox">
+            <label class="filter-shop__label" for="chair">
+              <span>Chair</span>
+              <span class="filter-shop__checkbox filter-shop__checkbox--category"></span>
+            </label>
+          </div>
+
+          <div class="filter-shop__item">
+            <input class="filter-shop__input" id="table" type="checkbox">
+            <label class="filter-shop__label" for="table">
+              <span>Table</span>
+              <span class="filter-shop__checkbox filter-shop__checkbox--category"></span>
+            </label>
+          </div>
+
+          <div class="filter-shop__item">
+            <input class="filter-shop__input" id="lamp" type="checkbox">
+            <label class="filter-shop__label" for="lamp">
+              <span>Lamp</span>
+              <span class="filter-shop__checkbox filter-shop__checkbox--category"></span>
+            </label>
+          </div>
+
+          <div class="filter-shop__item">
+            <input class="filter-shop__input" id="watch" type="checkbox">
+            <label class="filter-shop__label" for="watch">
+              <span>Watch</span>
+              <span class="filter-shop__checkbox filter-shop__checkbox--category"></span>
+            </label>
+          </div>
+
+          <div class="filter-shop__item">
+            <input class="filter-shop__input" id="clock" type="checkbox">
+            <label class="filter-shop__label" for="clock">
+              <span>Clock</span>
+              <span class="filter-shop__checkbox filter-shop__checkbox--category"></span>
+            </label>
+          </div>
+        </li>
+
+        <li class="filter-price">
+          <h2 class="filter-shop__title">
+            Price
+          </h2>
+          <input class="filter-price__input" id="price" type="text">
+          <label for="price" class="filter-price__label">
+            <span class="filter-price__from" tabindex="0"></span>
+            <span class="filter-price__to" tabindex="0"></span>
+          </label>
+        </li>
+
+        <li class="filter-shop">
+          <h2 class="filter-shop__title">
+            Brand
+          </h2>
+          <div class="filter-shop__item">
+            <input class="filter-shop__input" id="btand-rfl" type="checkbox">
+            <label class="filter-shop__label" for="btand-rfl">
+              <span>RFL</span>
+              <span class="filter-shop__checkbox">(10)</span>
+            </label>
+          </div>
+
+          <div class="filter-shop__item">
+            <input class="filter-shop__input" id="btand-brothers" type="checkbox">
+            <label class="filter-shop__label" for="btand-brothers">
+              <span>Brothers</span>
+              <span class="filter-shop__checkbox">(3)</span>
+            </label>
+          </div>
+
+          <div class="filter-shop__item">
+            <input class="filter-shop__input" id="btand-regal" type="checkbox">
+            <label class="filter-shop__label" for="btand-regal">
+              <span>Regal</span>
+              <span class="filter-shop__checkbox">(23)</span>
+            </label>
+          </div>
+
+          <div class="filter-shop__item">
+            <input class="filter-shop__input" id="btand-nadia" type="checkbox">
+            <label class="filter-shop__label" for="btand-nadia">
+              <span>Nadia</span>
+              <span class="filter-shop__checkbox">(14)</span>
+            </label>
+          </div>
+
+          <div class="filter-shop__item">
+            <input class="filter-shop__input" id="btand-otobi" type="checkbox">
+            <label class="filter-shop__label" for="btand-otobi">
+              <span>Otobi</span>
+              <span class="filter-shop__checkbox">(6)</span>
+            </label>
+          </div>
+        </li>
+
+        <li class="recent-product">
+          <h2 class="filter-shop__title">
+            Recent product
+          </h2>
+          <ul class="recent-product__list">
+            <li class="recent-product__card">
+              <a class="recent-product__link" href="#">
+                <div class="recent-product__bg">
+                  <img class="recent-product__img" src="images/recent/product1.png" width="68" height="68"
+                    alt="photo product">
+                </div>
+                <div class="recent-product__info">
+                  <span class="recent-product__title">
+                    Pendant lamp
+                  </span>
+                  <div class="recent-product__star" data-rateyo-rating="4"></div>
+                  <span class="recent-product__price">23$</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="recent-product__card">
+              <a class="recent-product__link" href="#">
+                <div class="recent-product__bg">
+                  <img class="recent-product__img" src="images/recent/product2.png" width="68" height="68"
+                    alt="photo product">
+                </div>
+                <div class="recent-product__info">
+                  <span class="recent-product__title">
+                    Pendant lamp
+                  </span>
+                  <div class="recent-product__star" data-rateyo-rating="4"></div>
+                  <span class="recent-product__price">23$</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="recent-product__card">
+              <a class="recent-product__link" href="#">
+                <div class="recent-product__bg">
+                  <img class="recent-product__img" src="images/recent/product3.png" width="68" height="68"
+                    alt="photo product">
+                </div>
+                <div class="recent-product__info">
+                  <span class="recent-product__title">
+                    Pendant lamp
+                  </span>
+                  <div class="recent-product__star" data-rateyo-rating="4"></div>
+                  <span class="recent-product__price">23$</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+        <li >
+          <button class="filter-shop__btn">
+            Accept
+          </button>
+        </li>
+      </ul>
+
+      @@include('../shop/_shop-content.html')
+
+    </div>
+  </div>
+</section>

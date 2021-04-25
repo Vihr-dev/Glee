@@ -1,0 +1,107 @@
+.team {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+    margin-bottom: 75px;
+
+    @include a(992) {
+      display: block;
+    }
+
+    @include a(768) {
+      padding-top: 30px;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    color: $accentDark;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    max-width: 305px;
+    margin-bottom: 60px;
+
+    @include a(1200) {
+      margin-right: 20px;
+    }
+
+    @include a(992) {
+      max-width: none;
+      margin: 0 0 30px 0;
+    }
+  }
+
+  &__btn {
+    padding: 15px 20px 20px 15px;
+    border-radius: 5px;
+
+    svg {
+      margin-left: 10px;
+    }
+
+    @include a(992) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__faces {
+    display: grid;
+    grid-template-columns: repeat(2, 370px);
+    grid-gap: 100px 30px;
+
+    @include a(992) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__info {
+    position: absolute;
+    max-width: 325px;
+    background-color: #fff;
+    padding: 15px 20px 30px 25px;
+    bottom: -65px;
+    box-shadow: 0 6px 57px rgba(37, 37, 37, 0.05);
+    display: flex;
+    align-items: flex-end;
+
+    @include a(576) {
+      display: block;
+      padding: 10px 80px 10px 20px;
+    }
+  }
+
+  &__card {
+    margin-right: 50px;
+
+    @include a(576) {
+      margin: 0 0 15px 0;
+    }
+  }
+
+  &__name {
+    display: block;
+    font-size: 22px;
+  }
+
+  &__position {
+    display: block;
+    @extend %rubik-400;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__social {
+    margin-right: 7px;
+  }
+}

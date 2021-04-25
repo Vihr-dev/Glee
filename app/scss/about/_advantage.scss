@@ -1,0 +1,53 @@
+.advantage {
+  background-color: $pink;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 85px 0 70px;
+
+    @include a(576) {
+      flex-direction: column;
+      padding: 15px 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    padding-top: 70px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 80px 60px;
+
+    &--computer {
+      background-image: url('../images/about/computer.svg');
+    }
+
+    &--car {
+      background-image: url('../images/about/car.svg');
+    }
+
+    &--24hours {
+      background-image: url('../images/about/24hours.svg');
+    }
+
+    &--brands {
+      background-image: url('../images/about/brands.svg');
+    }
+
+    @include a(576) {
+      font-size: 28px;
+      background-size: 60px 30px;
+      padding-top: 50px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text {
+    display: block;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,53 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 75px;
+
+  @include a(992) {
+    margin-bottom: 30px;
+  }
+
+  @include a(576) {
+    display: block;
+  }
+
+  &__category {
+    margin: 0 7px;
+    outline-color: $accent;
+
+    @include a(576) {
+      text-align: center;
+      padding: 5px 0;
+    }
+  }
+
+  &__btn {
+    color: #8b8b8b;
+    background-color: transparent;
+    border-color: transparent;
+    line-height: 1.2;
+    text-align: center;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $title;
+      cursor: pointer;
+    }
+
+    &:active {
+      color: #fff;
+    }
+
+    &:focus {
+      color: $title;
+    }
+
+    @include a(576) {
+      width: 100%;
+    }
+  }
+}
+
+.mixitup-control-active {
+  border-bottom: 1px solid $accent;
+}

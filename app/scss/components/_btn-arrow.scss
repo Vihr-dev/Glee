@@ -1,0 +1,70 @@
+.btn-arrow {
+  display: inline-block;
+  background-color: $accent;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  @extend %rubik-500;
+  max-width: 450px;
+  font-size: 15px;
+  line-height: 1;
+  padding: 20px 20px 20px 25px;
+  position: relative;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+
+  &__svg {
+    width: 22px;
+    height: 9px;
+    margin-left: 55px;
+    fill: #fff;
+  }
+
+  &:hover {
+    background-color: $accentDark;
+  }
+
+  &:active {
+    outline: transparent;
+    border: 2px solid $accent;
+  }
+
+  &--transperent {
+    color: $default;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid $default;
+
+    .btn-arrow__svg {
+      fill: $default;
+      transition: fill 0.3s;
+    }
+
+    &:hover {
+      color: #fff;
+
+      .btn-arrow__svg {
+        fill: #fff;
+      }
+    }
+
+    @include a(1200) {
+      padding: 10px 10px 10px 15px;
+    }
+
+    @include a(576) {
+      width: 185px;
+      display: block;
+      margin: 0 auto 15px;
+    }
+  }
+
+  &--blog{
+    background-color: transparent;
+    color: $accent;
+    border-color: $accent;
+    .btn-arrow__svg{
+      fill: $accent;
+      margin-left: 35px;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.product-card {
+  border-radius: 10px;
+  box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
+  position: relative;
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.35);
+
+    .product-card__list {
+      transform: scale(1);
+      transition: transform 0.3s;
+    }
+  }
+
+  &:active {
+    box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
+  }
+
+  &:focus {
+    border: 2px solid $accent;
+  }
+
+  @include a(992) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__list {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    display: flex;
+    transform: scale(0);
+    transition: transform 0.3s;
+
+    & li:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    @include a(992) {
+      transform: scale(1);
+      position: relative;
+      top: 0;
+      left: 0;
+      order: 2;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__img {
+    width: 90%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 80%;
+      object-fit: contain;
+    }
+  }
+
+  &__sub-title {
+    @extend %dmsans-500;
+    text-align: center;
+    color: $accentDark;
+    padding-top: 10px;
+    @include clamp(1);
+  }
+
+  &__price {
+    display: block;
+    color: $accent;
+    text-align: center;
+    padding-bottom: 30px;
+    @include clamp(1);
+
+    @include a(992) {
+      padding-bottom: 15px;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-color: transparent;
+
+    &:hover {
+      background-color: $accentDark;
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: $accent;
+    }
+  }
+
+  &__wrapper {
+    display: none;
+  }
+}

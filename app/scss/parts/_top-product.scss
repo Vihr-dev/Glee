@@ -1,0 +1,166 @@
+.top-product {
+
+  &__list {
+    background-color: $pink;
+    height: 75vh;
+
+    @include a(1200) {
+      height: 50vh;
+    }
+
+    @include a(992) {
+      height: 100%;
+    }
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__content {
+    margin-top: -5vh;
+    margin-left: -5vh;
+
+    @include a(1200) {
+      margin-left: 5vh;
+    }
+
+    @include a(992) {
+      margin-top: 0;
+    }
+
+    @include a(768) {
+      margin-left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    max-width: 450px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 70px;
+    line-height: 1;
+    color: #243f4d;
+    @extend %rubik-500;
+    @include clamp(2);
+
+    @include a(1600) {
+      font-size: 30px;
+    }
+
+    @include a(992) {
+      margin-bottom: 10px;
+      margin-top: 30px;
+    }
+
+    @include a(768) {
+      font-size: 20px;
+      margin-bottom: 15px;
+      padding-top: 15px;
+    }
+  }
+
+  &__info {
+    max-width: 365px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    @extend %rubik-400;
+    @include clamp(5);
+
+    @include a(992) {
+      font-size: 14px;
+    }
+
+    @include a(992) {
+      max-width: 210px;
+    }
+
+    @include a(768) {
+      max-width: none;
+      margin: 0 15px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    @include a(992) {
+      padding: 10px 10px 10px 15px;
+      border-radius: 50px;
+      display: inline-flex;
+    }
+
+    // @include a(576) {
+    //   padding: 10px 10px 10px 15px;
+    //   border-radius: 50px;
+    // }
+  }
+
+  &__circle {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 10%;
+      right: 10%;
+      width: 35vw;
+      height: 60vh;
+      border-radius: 50%;
+      background-image: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+
+      @include a(1600) {
+        right: 2%;
+      }
+
+      @include a(1200) {
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 35%;
+    right: 17%;
+    z-index: 1;
+    object-fit: fill;
+
+    @include a(1600) {
+      right: 8%;
+      width: 45%;
+      object-fit: contain;
+      top: 28%;
+    }
+
+    @include a(1200) {
+      top: 18%;
+    }
+
+    @include a(992) {
+      // top: 16%;
+      display: block;
+      position: relative;
+      right: 0;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+
+    @include a(768) {
+      display: block;
+      position: relative;
+      right: 0;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+
+    @include a(576) {
+      width: 70%;
+      height: 100%;
+      padding-bottom: 15%;
+      padding-top: 10%;
+    }
+  }
+}

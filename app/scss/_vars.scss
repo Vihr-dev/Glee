@@ -1,0 +1,64 @@
+$accent: #a3bbc8;
+$accentDark: #243f4d;
+$default: #436372;
+$title: #1a1a1a;
+$pink: #fcd7b6;
+$bg: #fef7f0;
+$gray: #7b7b7b;
+$icons: #edf1f4;
+$namePage: #222933;
+$blogtext: #333;
+$form: #fafafa;
+
+
+%dmsans-700 {
+  font-family: 'DMSans', sans-serif;
+  font-weight: 700;
+}
+
+%dmsans-500 {
+  font-family: 'DMSans', sans-serif;
+  font-weight: 500;
+}
+
+%dmsans-400 {
+  font-family: 'DMSans', sans-serif;
+  font-weight: 400;
+}
+
+%rubik-500 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+%rubik-400 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+%rubik-300 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
+
+%poppins-700 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+%button {
+  display: inline-block;
+  background-color: $accent;
+  color: #fff;
+  border: 2px solid transparent;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
